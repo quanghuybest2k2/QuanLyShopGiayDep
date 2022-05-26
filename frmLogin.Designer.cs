@@ -40,7 +40,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.timeOut = new System.Windows.Forms.Timer(this.components);
             this.chkLuuThongTin = new System.Windows.Forms.CheckBox();
-            this.btnThu = new System.Windows.Forms.Button();
+            this.btnThuNho = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbHinh)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,20 +155,20 @@
             this.chkLuuThongTin.Text = "Lưu thông tin đăng nhập";
             this.chkLuuThongTin.UseVisualStyleBackColor = true;
             // 
-            // btnThu
+            // btnThuNho
             // 
-            this.btnThu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(23)))));
-            this.btnThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThu.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThu.ForeColor = System.Drawing.Color.White;
-            this.btnThu.Location = new System.Drawing.Point(382, 12);
-            this.btnThu.Name = "btnThu";
-            this.btnThu.Size = new System.Drawing.Size(46, 41);
-            this.btnThu.TabIndex = 5;
-            this.btnThu.Text = "-";
-            this.btnThu.UseVisualStyleBackColor = false;
-            this.btnThu.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnThuNho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThuNho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(18)))), ((int)(((byte)(23)))));
+            this.btnThuNho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThuNho.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThuNho.ForeColor = System.Drawing.Color.White;
+            this.btnThuNho.Location = new System.Drawing.Point(382, 12);
+            this.btnThuNho.Name = "btnThuNho";
+            this.btnThuNho.Size = new System.Drawing.Size(46, 41);
+            this.btnThuNho.TabIndex = 5;
+            this.btnThuNho.Text = "-";
+            this.btnThuNho.UseVisualStyleBackColor = false;
+            this.btnThuNho.Click += new System.EventHandler(this.btnThuNho_Click);
             // 
             // frmLogin
             // 
@@ -176,7 +176,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(506, 477);
             this.Controls.Add(this.chkLuuThongTin);
-            this.Controls.Add(this.btnThu);
+            this.Controls.Add(this.btnThuNho);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.pbHinh);
@@ -210,7 +210,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Timer timeOut;
         private System.Windows.Forms.CheckBox chkLuuThongTin;
-        private System.Windows.Forms.Button btnThu;
+        private System.Windows.Forms.Button btnThuNho;
     }
 }
 
