@@ -34,5 +34,10 @@ namespace QuanLyShopGiayDep
 
             timeOut.Start();
         }
+
+        private void btnThuNho_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
