@@ -117,4 +117,321 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblIDAdmin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt, style=Bold</value>
+  </data>
+  <data name="lblIDAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 15</value>
+  </data>
+  <data name="lblIDAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 19</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblIDAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblIDAdmin.Text" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;lblIDAdmin.Name" xml:space="preserve">
+    <value>lblIDAdmin</value>
+  </data>
+  <data name="&gt;&gt;lblIDAdmin.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.FoxLabel, ReaLTaiizor, Version=3.7.8.5, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblIDAdmin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblIDAdmin.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblTenKHAdmin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt, style=Bold</value>
+  </data>
+  <data name="lblTenKHAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 66</value>
+  </data>
+  <data name="lblTenKHAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 17</value>
+  </data>
+  <data name="lblTenKHAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblTenKHAdmin.Text" xml:space="preserve">
+    <value>Tên khách hàng</value>
+  </data>
+  <data name="&gt;&gt;lblTenKHAdmin.Name" xml:space="preserve">
+    <value>lblTenKHAdmin</value>
+  </data>
+  <data name="&gt;&gt;lblTenKHAdmin.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.FoxLabel, ReaLTaiizor, Version=3.7.8.5, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblTenKHAdmin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTenKHAdmin.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblDiaChiAdmin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt, style=Bold</value>
+  </data>
+  <data name="lblDiaChiAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 153</value>
+  </data>
+  <data name="lblDiaChiAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 17</value>
+  </data>
+  <data name="lblDiaChiAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblDiaChiAdmin.Text" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="&gt;&gt;lblDiaChiAdmin.Name" xml:space="preserve">
+    <value>lblDiaChiAdmin</value>
+  </data>
+  <data name="&gt;&gt;lblDiaChiAdmin.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.FoxLabel, ReaLTaiizor, Version=3.7.8.5, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblDiaChiAdmin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDiaChiAdmin.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="mtxtSDTAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 104</value>
+  </data>
+  <data name="mtxtSDTAdmin.Mask" xml:space="preserve">
+    <value>000.000.0000</value>
+  </data>
+  <data name="mtxtSDTAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 20</value>
+  </data>
+  <data name="mtxtSDTAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;mtxtSDTAdmin.Name" xml:space="preserve">
+    <value>mtxtSDTAdmin</value>
+  </data>
+  <data name="&gt;&gt;mtxtSDTAdmin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mtxtSDTAdmin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mtxtSDTAdmin.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblSDTAdmin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt, style=Bold</value>
+  </data>
+  <data name="lblSDTAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 107</value>
+  </data>
+  <data name="lblSDTAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 17</value>
+  </data>
+  <data name="lblSDTAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblSDTAdmin.Text" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="&gt;&gt;lblSDTAdmin.Name" xml:space="preserve">
+    <value>lblSDTAdmin</value>
+  </data>
+  <data name="&gt;&gt;lblSDTAdmin.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.FoxLabel, ReaLTaiizor, Version=3.7.8.5, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblSDTAdmin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblSDTAdmin.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="dtgvKhachHangAdmin.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <metadata name="colIDAdmin.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colIDAdmin.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <metadata name="colTenKHAdmin.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colTenKHAdmin.HeaderText" xml:space="preserve">
+    <value>Tên khách hàng</value>
+  </data>
+  <metadata name="colSDTAdmin.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colSDTAdmin.HeaderText" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <metadata name="colDiaChiAdmin.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="colDiaChiAdmin.HeaderText" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="dtgvKhachHangAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 247</value>
+  </data>
+  <data name="dtgvKhachHangAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>919, 248</value>
+  </data>
+  <data name="dtgvKhachHangAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dtgvKhachHangAdmin.Name" xml:space="preserve">
+    <value>dtgvKhachHangAdmin</value>
+  </data>
+  <data name="&gt;&gt;dtgvKhachHangAdmin.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;dtgvKhachHangAdmin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dtgvKhachHangAdmin.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtIDAdmin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtIDAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 6</value>
+  </data>
+  <data name="txtIDAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 28</value>
+  </data>
+  <data name="txtIDAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtIDAdmin.Name" xml:space="preserve">
+    <value>txtIDAdmin</value>
+  </data>
+  <data name="&gt;&gt;txtIDAdmin.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;txtIDAdmin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtIDAdmin.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtTenKHAdmin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtTenKHAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 55</value>
+  </data>
+  <data name="txtTenKHAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 28</value>
+  </data>
+  <data name="txtTenKHAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtTenKHAdmin.Name" xml:space="preserve">
+    <value>txtTenKHAdmin</value>
+  </data>
+  <data name="&gt;&gt;txtTenKHAdmin.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;txtTenKHAdmin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtTenKHAdmin.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtDiaChiAdmin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtDiaChiAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 142</value>
+  </data>
+  <data name="txtDiaChiAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 28</value>
+  </data>
+  <data name="txtDiaChiAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtDiaChiAdmin.Name" xml:space="preserve">
+    <value>txtDiaChiAdmin</value>
+  </data>
+  <data name="&gt;&gt;txtDiaChiAdmin.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;txtDiaChiAdmin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDiaChiAdmin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnLuuAdmin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="btnLuuAdmin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, 185</value>
+  </data>
+  <data name="btnLuuAdmin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 45</value>
+  </data>
+  <data name="btnLuuAdmin.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnLuuAdmin.Text" xml:space="preserve">
+    <value>Lưu thông tin</value>
+  </data>
+  <data name="&gt;&gt;btnLuuAdmin.Name" xml:space="preserve">
+    <value>btnLuuAdmin</value>
+  </data>
+  <data name="&gt;&gt;btnLuuAdmin.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.AirButton, ReaLTaiizor, Version=3.7.8.5, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnLuuAdmin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnLuuAdmin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>962, 517</value>
+  </data>
+  <data name="&gt;&gt;colIDAdmin.Name" xml:space="preserve">
+    <value>colIDAdmin</value>
+  </data>
+  <data name="&gt;&gt;colIDAdmin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colTenKHAdmin.Name" xml:space="preserve">
+    <value>colTenKHAdmin</value>
+  </data>
+  <data name="&gt;&gt;colTenKHAdmin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colSDTAdmin.Name" xml:space="preserve">
+    <value>colSDTAdmin</value>
+  </data>
+  <data name="&gt;&gt;colSDTAdmin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colDiaChiAdmin.Name" xml:space="preserve">
+    <value>colDiaChiAdmin</value>
+  </data>
+  <data name="&gt;&gt;colDiaChiAdmin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UC_KhachHang</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

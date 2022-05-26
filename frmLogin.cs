@@ -21,7 +21,7 @@ namespace QuanLyShopGiayDep
         {
             if (this.Opacity > 0.0)
             {
-                this.Opacity -= 0.35;
+                this.Opacity -= 0.25;
             }
             else
             {

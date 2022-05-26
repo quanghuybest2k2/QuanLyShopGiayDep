@@ -46,6 +46,7 @@ namespace QuanLyShopGiayDep.UserControls
             // UC_NhaCC
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
             this.Controls.Add(this.lblUC_NhaCC);
             this.Name = "UC_NhaCC";
             this.Size = new System.Drawing.Size(962, 517);
