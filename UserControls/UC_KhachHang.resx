@@ -285,7 +285,7 @@
     <value>919, 248</value>
   </data>
   <data name="dtgvKhachHangAdmin.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;dtgvKhachHangAdmin.Name" xml:space="preserve">
     <value>dtgvKhachHangAdmin</value>
@@ -381,7 +381,7 @@
     <value>100, 45</value>
   </data>
   <data name="btnLuuKHAdmin.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="btnLuuKHAdmin.Text" xml:space="preserve">
     <value>Lưu thông tin</value>

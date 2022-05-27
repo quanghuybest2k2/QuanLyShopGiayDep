@@ -56,5 +56,15 @@ namespace QuanLyShopGiayDep
             UC_HangHoa uc = new UC_HangHoa();
             addUserControl(uc);
         }
+
+        private void btnMinimizeAdmin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnExitAdmin_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

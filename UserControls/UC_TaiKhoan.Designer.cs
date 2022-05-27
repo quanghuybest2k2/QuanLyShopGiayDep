@@ -85,7 +85,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.dtgvTaiKhoanAdmin.Location = new System.Drawing.Point(0, 335);
             this.dtgvTaiKhoanAdmin.Name = "dtgvTaiKhoanAdmin";
             this.dtgvTaiKhoanAdmin.Size = new System.Drawing.Size(959, 183);
-            this.dtgvTaiKhoanAdmin.TabIndex = 46;
+            this.dtgvTaiKhoanAdmin.TabIndex = 13;
             // 
             // Column1
             // 
@@ -149,7 +149,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.cbbQuyenTKAdmin.Location = new System.Drawing.Point(594, 204);
             this.cbbQuyenTKAdmin.Name = "cbbQuyenTKAdmin";
             this.cbbQuyenTKAdmin.Size = new System.Drawing.Size(244, 23);
-            this.cbbQuyenTKAdmin.TabIndex = 45;
+            this.cbbQuyenTKAdmin.TabIndex = 9;
             // 
             // btnLamMoiTKAdmin
             // 
@@ -162,7 +162,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.btnLamMoiTKAdmin.Location = new System.Drawing.Point(554, 291);
             this.btnLamMoiTKAdmin.Name = "btnLamMoiTKAdmin";
             this.btnLamMoiTKAdmin.Size = new System.Drawing.Size(124, 38);
-            this.btnLamMoiTKAdmin.TabIndex = 42;
+            this.btnLamMoiTKAdmin.TabIndex = 11;
             this.btnLamMoiTKAdmin.Text = "Làm mới";
             this.btnLamMoiTKAdmin.UseVisualStyleBackColor = false;
             // 
@@ -177,7 +177,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.btnXoaTKAdmin.Location = new System.Drawing.Point(594, 524);
             this.btnXoaTKAdmin.Name = "btnXoaTKAdmin";
             this.btnXoaTKAdmin.Size = new System.Drawing.Size(111, 38);
-            this.btnXoaTKAdmin.TabIndex = 41;
+            this.btnXoaTKAdmin.TabIndex = 14;
             this.btnXoaTKAdmin.Text = "Xóa";
             this.btnXoaTKAdmin.UseVisualStyleBackColor = false;
             // 
@@ -192,7 +192,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.btnLuuTKAdmin.Location = new System.Drawing.Point(708, 291);
             this.btnLuuTKAdmin.Name = "btnLuuTKAdmin";
             this.btnLuuTKAdmin.Size = new System.Drawing.Size(141, 38);
-            this.btnLuuTKAdmin.TabIndex = 44;
+            this.btnLuuTKAdmin.TabIndex = 12;
             this.btnLuuTKAdmin.Text = "Lưu";
             this.btnLuuTKAdmin.UseVisualStyleBackColor = false;
             // 
@@ -207,7 +207,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.btnSuaTKAdmin.Location = new System.Drawing.Point(727, 524);
             this.btnSuaTKAdmin.Name = "btnSuaTKAdmin";
             this.btnSuaTKAdmin.Size = new System.Drawing.Size(111, 38);
-            this.btnSuaTKAdmin.TabIndex = 43;
+            this.btnSuaTKAdmin.TabIndex = 15;
             this.btnSuaTKAdmin.Text = "Chỉnh Sửa";
             this.btnSuaTKAdmin.UseVisualStyleBackColor = false;
             // 
@@ -217,7 +217,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.txtTenNVTKAdmin.Location = new System.Drawing.Point(594, 56);
             this.txtTenNVTKAdmin.Name = "txtTenNVTKAdmin";
             this.txtTenNVTKAdmin.Size = new System.Drawing.Size(244, 20);
-            this.txtTenNVTKAdmin.TabIndex = 39;
+            this.txtTenNVTKAdmin.TabIndex = 6;
             // 
             // txtCCCDTKAdmin
             // 
@@ -225,7 +225,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.txtCCCDTKAdmin.Location = new System.Drawing.Point(594, 102);
             this.txtCCCDTKAdmin.Name = "txtCCCDTKAdmin";
             this.txtCCCDTKAdmin.Size = new System.Drawing.Size(244, 20);
-            this.txtCCCDTKAdmin.TabIndex = 38;
+            this.txtCCCDTKAdmin.TabIndex = 7;
             // 
             // txtMatKhauTKAdmin
             // 
@@ -234,7 +234,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.txtMatKhauTKAdmin.Name = "txtMatKhauTKAdmin";
             this.txtMatKhauTKAdmin.PasswordChar = '*';
             this.txtMatKhauTKAdmin.Size = new System.Drawing.Size(199, 20);
-            this.txtMatKhauTKAdmin.TabIndex = 40;
+            this.txtMatKhauTKAdmin.TabIndex = 4;
             // 
             // txtEmailTKAdmin
             // 
@@ -242,7 +242,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.txtEmailTKAdmin.Location = new System.Drawing.Point(241, 156);
             this.txtEmailTKAdmin.Name = "txtEmailTKAdmin";
             this.txtEmailTKAdmin.Size = new System.Drawing.Size(199, 20);
-            this.txtEmailTKAdmin.TabIndex = 36;
+            this.txtEmailTKAdmin.TabIndex = 3;
             // 
             // txtTenDNTKAdmin
             // 
@@ -250,7 +250,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.txtTenDNTKAdmin.Location = new System.Drawing.Point(241, 54);
             this.txtTenDNTKAdmin.Name = "txtTenDNTKAdmin";
             this.txtTenDNTKAdmin.Size = new System.Drawing.Size(199, 20);
-            this.txtTenDNTKAdmin.TabIndex = 34;
+            this.txtTenDNTKAdmin.TabIndex = 1;
             // 
             // lblVaiTroTKAdmin
             // 
@@ -357,7 +357,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.mtxtSDTTKAdmin.Mask = "000.000.0000";
             this.mtxtSDTTKAdmin.Name = "mtxtSDTTKAdmin";
             this.mtxtSDTTKAdmin.Size = new System.Drawing.Size(199, 20);
-            this.mtxtSDTTKAdmin.TabIndex = 47;
+            this.mtxtSDTTKAdmin.TabIndex = 2;
             // 
             // dtpNgayTaoTKAdmin
             // 
@@ -367,7 +367,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.dtpNgayTaoTKAdmin.Location = new System.Drawing.Point(594, 155);
             this.dtpNgayTaoTKAdmin.Name = "dtpNgayTaoTKAdmin";
             this.dtpNgayTaoTKAdmin.Size = new System.Drawing.Size(244, 22);
-            this.dtpNgayTaoTKAdmin.TabIndex = 48;
+            this.dtpNgayTaoTKAdmin.TabIndex = 8;
             // 
             // lblDiaChiTKAdmin
             // 
@@ -387,7 +387,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.txtDiaChiTKAdmin.Name = "txtDiaChiTKAdmin";
             this.txtDiaChiTKAdmin.PasswordChar = '*';
             this.txtDiaChiTKAdmin.Size = new System.Drawing.Size(199, 20);
-            this.txtDiaChiTKAdmin.TabIndex = 40;
+            this.txtDiaChiTKAdmin.TabIndex = 5;
             // 
             // chkKichHoatTKAdmin
             // 
@@ -396,7 +396,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.chkKichHoatTKAdmin.Location = new System.Drawing.Point(594, 247);
             this.chkKichHoatTKAdmin.Name = "chkKichHoatTKAdmin";
             this.chkKichHoatTKAdmin.Size = new System.Drawing.Size(98, 23);
-            this.chkKichHoatTKAdmin.TabIndex = 49;
+            this.chkKichHoatTKAdmin.TabIndex = 10;
             this.chkKichHoatTKAdmin.Text = "kích hoạt";
             this.chkKichHoatTKAdmin.UseVisualStyleBackColor = true;
             // 
