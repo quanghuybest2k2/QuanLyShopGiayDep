@@ -30,6 +30,9 @@ namespace QuanLyShopGiayDep.UserControls
         private void InitializeComponent()
         {
             this.gbTopAdmin = new System.Windows.Forms.GroupBox();
+            this.btnTimKiemNhaCC = new System.Windows.Forms.Button();
+            this.dtpDenNgay = new System.Windows.Forms.DateTimePicker();
+            this.dtpTuNgay = new System.Windows.Forms.DateTimePicker();
             this.foxLabel2 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel1 = new ReaLTaiizor.Controls.FoxLabel();
             this.txtDiaChiNhaCCAdmin = new Guna.UI2.WinForms.Guna2TextBox();
@@ -42,9 +45,6 @@ namespace QuanLyShopGiayDep.UserControls
             this.lblTenNhaCCAdmin = new ReaLTaiizor.Controls.FoxLabel();
             this.lblIDNhCCAdmin = new ReaLTaiizor.Controls.FoxLabel();
             this.gbDanhSachNhaCC = new System.Windows.Forms.GroupBox();
-            this.dtpTuNgay = new System.Windows.Forms.DateTimePicker();
-            this.dtpDenNgay = new System.Windows.Forms.DateTimePicker();
-            this.btnThemNhaCC = new System.Windows.Forms.Button();
             this.dtgvDanhSachNhaCC = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,7 +52,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnTimKiemNhaCC = new System.Windows.Forms.Button();
+            this.btnThemNhaCC = new System.Windows.Forms.Button();
             this.gbTopAdmin.SuspendLayout();
             this.gbDanhSachNhaCC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachNhaCC)).BeginInit();
@@ -82,6 +82,36 @@ namespace QuanLyShopGiayDep.UserControls
             this.gbTopAdmin.TabIndex = 1;
             this.gbTopAdmin.TabStop = false;
             this.gbTopAdmin.Text = "Tìm kiếm theo nhà cung cấp";
+            // 
+            // btnTimKiemNhaCC
+            // 
+            this.btnTimKiemNhaCC.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnTimKiemNhaCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiemNhaCC.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiemNhaCC.Location = new System.Drawing.Point(281, 210);
+            this.btnTimKiemNhaCC.Name = "btnTimKiemNhaCC";
+            this.btnTimKiemNhaCC.Size = new System.Drawing.Size(179, 38);
+            this.btnTimKiemNhaCC.TabIndex = 5;
+            this.btnTimKiemNhaCC.Text = "Tìm kiếm";
+            this.btnTimKiemNhaCC.UseVisualStyleBackColor = false;
+            // 
+            // dtpDenNgay
+            // 
+            this.dtpDenNgay.CustomFormat = "dd/MM/yyyy";
+            this.dtpDenNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDenNgay.Location = new System.Drawing.Point(553, 181);
+            this.dtpDenNgay.Name = "dtpDenNgay";
+            this.dtpDenNgay.Size = new System.Drawing.Size(179, 22);
+            this.dtpDenNgay.TabIndex = 17;
+            // 
+            // dtpTuNgay
+            // 
+            this.dtpTuNgay.CustomFormat = "dd/MM/yyyy";
+            this.dtpTuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTuNgay.Location = new System.Drawing.Point(281, 181);
+            this.dtpTuNgay.Name = "dtpTuNgay";
+            this.dtpTuNgay.Size = new System.Drawing.Size(179, 22);
+            this.dtpTuNgay.TabIndex = 17;
             // 
             // foxLabel2
             // 
@@ -114,7 +144,7 @@ namespace QuanLyShopGiayDep.UserControls
             this.txtDiaChiNhaCCAdmin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChiNhaCCAdmin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDiaChiNhaCCAdmin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiaChiNhaCCAdmin.Location = new System.Drawing.Point(251, 137);
+            this.txtDiaChiNhaCCAdmin.Location = new System.Drawing.Point(253, 137);
             this.txtDiaChiNhaCCAdmin.Name = "txtDiaChiNhaCCAdmin";
             this.txtDiaChiNhaCCAdmin.PasswordChar = '\0';
             this.txtDiaChiNhaCCAdmin.PlaceholderText = "";
@@ -230,34 +260,6 @@ namespace QuanLyShopGiayDep.UserControls
             this.gbDanhSachNhaCC.TabStop = false;
             this.gbDanhSachNhaCC.Text = "Danh sách nhà cung cấp";
             // 
-            // dtpTuNgay
-            // 
-            this.dtpTuNgay.CustomFormat = "dd/MM/yyyy";
-            this.dtpTuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpTuNgay.Location = new System.Drawing.Point(281, 181);
-            this.dtpTuNgay.Name = "dtpTuNgay";
-            this.dtpTuNgay.Size = new System.Drawing.Size(179, 22);
-            this.dtpTuNgay.TabIndex = 17;
-            // 
-            // dtpDenNgay
-            // 
-            this.dtpDenNgay.CustomFormat = "dd/MM/yyyy";
-            this.dtpDenNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDenNgay.Location = new System.Drawing.Point(553, 181);
-            this.dtpDenNgay.Name = "dtpDenNgay";
-            this.dtpDenNgay.Size = new System.Drawing.Size(179, 22);
-            this.dtpDenNgay.TabIndex = 17;
-            // 
-            // btnThemNhaCC
-            // 
-            this.btnThemNhaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemNhaCC.Location = new System.Drawing.Point(899, 256);
-            this.btnThemNhaCC.Name = "btnThemNhaCC";
-            this.btnThemNhaCC.Size = new System.Drawing.Size(43, 30);
-            this.btnThemNhaCC.TabIndex = 6;
-            this.btnThemNhaCC.Text = "+";
-            this.btnThemNhaCC.UseVisualStyleBackColor = true;
-            // 
             // dtgvDanhSachNhaCC
             // 
             this.dtgvDanhSachNhaCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -304,17 +306,15 @@ namespace QuanLyShopGiayDep.UserControls
             this.Column6.HeaderText = "Đến ngày";
             this.Column6.Name = "Column6";
             // 
-            // btnTimKiemNhaCC
+            // btnThemNhaCC
             // 
-            this.btnTimKiemNhaCC.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnTimKiemNhaCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiemNhaCC.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiemNhaCC.Location = new System.Drawing.Point(281, 210);
-            this.btnTimKiemNhaCC.Name = "btnTimKiemNhaCC";
-            this.btnTimKiemNhaCC.Size = new System.Drawing.Size(179, 38);
-            this.btnTimKiemNhaCC.TabIndex = 5;
-            this.btnTimKiemNhaCC.Text = "Tìm kiếm";
-            this.btnTimKiemNhaCC.UseVisualStyleBackColor = false;
+            this.btnThemNhaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemNhaCC.Location = new System.Drawing.Point(899, 256);
+            this.btnThemNhaCC.Name = "btnThemNhaCC";
+            this.btnThemNhaCC.Size = new System.Drawing.Size(43, 30);
+            this.btnThemNhaCC.TabIndex = 6;
+            this.btnThemNhaCC.Text = "+";
+            this.btnThemNhaCC.UseVisualStyleBackColor = true;
             // 
             // UC_NhaCC
             // 

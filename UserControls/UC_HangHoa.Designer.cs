@@ -34,6 +34,12 @@ namespace QuanLyShopGiayDep.UserControls
             this.lblTimKiemHHAdmin = new System.Windows.Forms.Label();
             this.cbbTimKiemHHAdmin = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.txtTimDMHHAdmin = new System.Windows.Forms.TextBox();
+            this.btnBootAdmin = new System.Windows.Forms.Button();
+            this.btnGuocAdmin = new System.Windows.Forms.Button();
+            this.btnGiayAdmin = new System.Windows.Forms.Button();
+            this.btnDepAdmin = new System.Windows.Forms.Button();
             this.dtgvHangHoaAdmin = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,31 +50,25 @@ namespace QuanLyShopGiayDep.UserControls
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.cbbSoLuongHH = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSoLuongHH = new System.Windows.Forms.Label();
+            this.nrudSoLuongHH = new System.Windows.Forms.NumericUpDown();
+            this.cbbNhaCCHH = new System.Windows.Forms.ComboBox();
             this.btnThemDanhMucHH = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.statusStripTongDM = new System.Windows.Forms.StatusStrip();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnDepAdmin = new System.Windows.Forms.Button();
-            this.btnGiayAdmin = new System.Windows.Forms.Button();
-            this.btnGuocAdmin = new System.Windows.Forms.Button();
-            this.txtTimDMHHAdmin = new System.Windows.Forms.TextBox();
-            this.btnBootAdmin = new System.Windows.Forms.Button();
             this.tsmlTongHH = new System.Windows.Forms.ToolStripStatusLabel();
-            this.cbbNhaCCHH = new System.Windows.Forms.ComboBox();
-            this.nrudSoLuongHH = new System.Windows.Forms.NumericUpDown();
-            this.lblSoLuongHH = new System.Windows.Forms.Label();
-            this.cbbSoLuongHH = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHangHoaAdmin)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nrudSoLuongHH)).BeginInit();
             this.panel1.SuspendLayout();
             this.statusStripTongDM.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nrudSoLuongHH)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTimKiemHHAdmin
@@ -117,6 +117,78 @@ namespace QuanLyShopGiayDep.UserControls
             this.panel6.Size = new System.Drawing.Size(942, 459);
             this.panel6.TabIndex = 12;
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.txtTimDMHHAdmin);
+            this.panel7.Controls.Add(this.btnBootAdmin);
+            this.panel7.Controls.Add(this.btnGuocAdmin);
+            this.panel7.Controls.Add(this.btnGiayAdmin);
+            this.panel7.Controls.Add(this.btnDepAdmin);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(193, 459);
+            this.panel7.TabIndex = 2;
+            // 
+            // txtTimDMHHAdmin
+            // 
+            this.txtTimDMHHAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTimDMHHAdmin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimDMHHAdmin.Location = new System.Drawing.Point(8, 17);
+            this.txtTimDMHHAdmin.Multiline = true;
+            this.txtTimDMHHAdmin.Name = "txtTimDMHHAdmin";
+            this.txtTimDMHHAdmin.Size = new System.Drawing.Size(182, 31);
+            this.txtTimDMHHAdmin.TabIndex = 35;
+            this.txtTimDMHHAdmin.Text = "-----Tìm danh mục-----";
+            // 
+            // btnBootAdmin
+            // 
+            this.btnBootAdmin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnBootAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBootAdmin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBootAdmin.Location = new System.Drawing.Point(8, 206);
+            this.btnBootAdmin.Name = "btnBootAdmin";
+            this.btnBootAdmin.Size = new System.Drawing.Size(182, 45);
+            this.btnBootAdmin.TabIndex = 0;
+            this.btnBootAdmin.Text = "Boot";
+            this.btnBootAdmin.UseVisualStyleBackColor = false;
+            // 
+            // btnGuocAdmin
+            // 
+            this.btnGuocAdmin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnGuocAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuocAdmin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuocAdmin.Location = new System.Drawing.Point(8, 155);
+            this.btnGuocAdmin.Name = "btnGuocAdmin";
+            this.btnGuocAdmin.Size = new System.Drawing.Size(182, 45);
+            this.btnGuocAdmin.TabIndex = 0;
+            this.btnGuocAdmin.Text = "Guốc";
+            this.btnGuocAdmin.UseVisualStyleBackColor = false;
+            // 
+            // btnGiayAdmin
+            // 
+            this.btnGiayAdmin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnGiayAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGiayAdmin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiayAdmin.Location = new System.Drawing.Point(8, 104);
+            this.btnGiayAdmin.Name = "btnGiayAdmin";
+            this.btnGiayAdmin.Size = new System.Drawing.Size(182, 45);
+            this.btnGiayAdmin.TabIndex = 0;
+            this.btnGiayAdmin.Text = "Giày";
+            this.btnGiayAdmin.UseVisualStyleBackColor = false;
+            // 
+            // btnDepAdmin
+            // 
+            this.btnDepAdmin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnDepAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDepAdmin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDepAdmin.Location = new System.Drawing.Point(8, 53);
+            this.btnDepAdmin.Name = "btnDepAdmin";
+            this.btnDepAdmin.Size = new System.Drawing.Size(182, 45);
+            this.btnDepAdmin.TabIndex = 0;
+            this.btnDepAdmin.Text = "Dép";
+            this.btnDepAdmin.UseVisualStyleBackColor = false;
+            // 
             // dtgvHangHoaAdmin
             // 
             this.dtgvHangHoaAdmin.AllowUserToAddRows = false;
@@ -133,12 +205,12 @@ namespace QuanLyShopGiayDep.UserControls
             this.Column7,
             this.Column8});
             this.dtgvHangHoaAdmin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dtgvHangHoaAdmin.Location = new System.Drawing.Point(193, 0);
+            this.dtgvHangHoaAdmin.Location = new System.Drawing.Point(196, 0);
             this.dtgvHangHoaAdmin.Name = "dtgvHangHoaAdmin";
             this.dtgvHangHoaAdmin.ReadOnly = true;
             this.dtgvHangHoaAdmin.RowHeadersVisible = false;
             this.dtgvHangHoaAdmin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvHangHoaAdmin.Size = new System.Drawing.Size(749, 459);
+            this.dtgvHangHoaAdmin.Size = new System.Drawing.Size(746, 459);
             this.dtgvHangHoaAdmin.TabIndex = 0;
             // 
             // Column1
@@ -214,6 +286,68 @@ namespace QuanLyShopGiayDep.UserControls
             this.panel5.Size = new System.Drawing.Size(942, 67);
             this.panel5.TabIndex = 11;
             // 
+            // cbbSoLuongHH
+            // 
+            this.cbbSoLuongHH.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbbSoLuongHH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbSoLuongHH.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbSoLuongHH.FormattingEnabled = true;
+            this.cbbSoLuongHH.Items.AddRange(new object[] {
+            ">",
+            "<",
+            "="});
+            this.cbbSoLuongHH.Location = new System.Drawing.Point(314, 39);
+            this.cbbSoLuongHH.Name = "cbbSoLuongHH";
+            this.cbbSoLuongHH.Size = new System.Drawing.Size(51, 23);
+            this.cbbSoLuongHH.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(218, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 16);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Nhà cung cấp:";
+            // 
+            // lblSoLuongHH
+            // 
+            this.lblSoLuongHH.AutoSize = true;
+            this.lblSoLuongHH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuongHH.ForeColor = System.Drawing.Color.White;
+            this.lblSoLuongHH.Location = new System.Drawing.Point(218, 43);
+            this.lblSoLuongHH.Name = "lblSoLuongHH";
+            this.lblSoLuongHH.Size = new System.Drawing.Size(73, 16);
+            this.lblSoLuongHH.TabIndex = 8;
+            this.lblSoLuongHH.Text = "Số lượng:";
+            // 
+            // nrudSoLuongHH
+            // 
+            this.nrudSoLuongHH.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.nrudSoLuongHH.Location = new System.Drawing.Point(392, 39);
+            this.nrudSoLuongHH.Name = "nrudSoLuongHH";
+            this.nrudSoLuongHH.Size = new System.Drawing.Size(64, 20);
+            this.nrudSoLuongHH.TabIndex = 7;
+            // 
+            // cbbNhaCCHH
+            // 
+            this.cbbNhaCCHH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbbNhaCCHH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbNhaCCHH.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbNhaCCHH.FormattingEnabled = true;
+            this.cbbNhaCCHH.Items.AddRange(new object[] {
+            "Công ty CP - SX - TM - DV JUNO",
+            "Công ty TNHH SX HTD Bình Tiên - Biti\'s",
+            "Công ty TNHH MTV Giày Da An Ba",
+            "Công ty CP Giầy Việt - Vina-Giầy",
+            "Công ty CP Giầy Việt - Vina-Giầy"});
+            this.cbbNhaCCHH.Location = new System.Drawing.Point(341, 6);
+            this.cbbNhaCCHH.Name = "cbbNhaCCHH";
+            this.cbbNhaCCHH.Size = new System.Drawing.Size(450, 23);
+            this.cbbNhaCCHH.TabIndex = 6;
+            // 
             // btnThemDanhMucHH
             // 
             this.btnThemDanhMucHH.BackColor = System.Drawing.Color.Navy;
@@ -278,146 +412,12 @@ namespace QuanLyShopGiayDep.UserControls
             this.statusStripTongDM.TabIndex = 0;
             this.statusStripTongDM.Text = "statusStrip1";
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.txtTimDMHHAdmin);
-            this.panel7.Controls.Add(this.btnBootAdmin);
-            this.panel7.Controls.Add(this.btnGuocAdmin);
-            this.panel7.Controls.Add(this.btnGiayAdmin);
-            this.panel7.Controls.Add(this.btnDepAdmin);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(193, 459);
-            this.panel7.TabIndex = 2;
-            // 
-            // btnDepAdmin
-            // 
-            this.btnDepAdmin.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnDepAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDepAdmin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDepAdmin.Location = new System.Drawing.Point(8, 53);
-            this.btnDepAdmin.Name = "btnDepAdmin";
-            this.btnDepAdmin.Size = new System.Drawing.Size(182, 45);
-            this.btnDepAdmin.TabIndex = 0;
-            this.btnDepAdmin.Text = "Dép";
-            this.btnDepAdmin.UseVisualStyleBackColor = false;
-            // 
-            // btnGiayAdmin
-            // 
-            this.btnGiayAdmin.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnGiayAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGiayAdmin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGiayAdmin.Location = new System.Drawing.Point(8, 104);
-            this.btnGiayAdmin.Name = "btnGiayAdmin";
-            this.btnGiayAdmin.Size = new System.Drawing.Size(182, 45);
-            this.btnGiayAdmin.TabIndex = 0;
-            this.btnGiayAdmin.Text = "Giày";
-            this.btnGiayAdmin.UseVisualStyleBackColor = false;
-            // 
-            // btnGuocAdmin
-            // 
-            this.btnGuocAdmin.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnGuocAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuocAdmin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuocAdmin.Location = new System.Drawing.Point(8, 155);
-            this.btnGuocAdmin.Name = "btnGuocAdmin";
-            this.btnGuocAdmin.Size = new System.Drawing.Size(182, 45);
-            this.btnGuocAdmin.TabIndex = 0;
-            this.btnGuocAdmin.Text = "Guốc";
-            this.btnGuocAdmin.UseVisualStyleBackColor = false;
-            // 
-            // txtTimDMHHAdmin
-            // 
-            this.txtTimDMHHAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTimDMHHAdmin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimDMHHAdmin.Location = new System.Drawing.Point(8, 17);
-            this.txtTimDMHHAdmin.Multiline = true;
-            this.txtTimDMHHAdmin.Name = "txtTimDMHHAdmin";
-            this.txtTimDMHHAdmin.Size = new System.Drawing.Size(182, 31);
-            this.txtTimDMHHAdmin.TabIndex = 35;
-            this.txtTimDMHHAdmin.Text = "-----Tìm danh mục-----";
-            // 
-            // btnBootAdmin
-            // 
-            this.btnBootAdmin.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnBootAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBootAdmin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBootAdmin.Location = new System.Drawing.Point(8, 206);
-            this.btnBootAdmin.Name = "btnBootAdmin";
-            this.btnBootAdmin.Size = new System.Drawing.Size(182, 45);
-            this.btnBootAdmin.TabIndex = 0;
-            this.btnBootAdmin.Text = "Boot";
-            this.btnBootAdmin.UseVisualStyleBackColor = false;
-            // 
             // tsmlTongHH
             // 
             this.tsmlTongHH.Name = "tsmlTongHH";
             this.tsmlTongHH.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.tsmlTongHH.Size = new System.Drawing.Size(76, 17);
             this.tsmlTongHH.Text = "Số hàng hóa:";
-            // 
-            // cbbNhaCCHH
-            // 
-            this.cbbNhaCCHH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbbNhaCCHH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbNhaCCHH.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbNhaCCHH.FormattingEnabled = true;
-            this.cbbNhaCCHH.Items.AddRange(new object[] {
-            "Công ty CP - SX - TM - DV JUNO",
-            "Công ty TNHH SX HTD Bình Tiên - Biti\'s",
-            "Công ty TNHH MTV Giày Da An Ba",
-            "Công ty CP Giầy Việt - Vina-Giầy",
-            "Công ty CP Giầy Việt - Vina-Giầy"});
-            this.cbbNhaCCHH.Location = new System.Drawing.Point(341, 6);
-            this.cbbNhaCCHH.Name = "cbbNhaCCHH";
-            this.cbbNhaCCHH.Size = new System.Drawing.Size(450, 23);
-            this.cbbNhaCCHH.TabIndex = 6;
-            // 
-            // nrudSoLuongHH
-            // 
-            this.nrudSoLuongHH.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.nrudSoLuongHH.Location = new System.Drawing.Point(392, 39);
-            this.nrudSoLuongHH.Name = "nrudSoLuongHH";
-            this.nrudSoLuongHH.Size = new System.Drawing.Size(64, 20);
-            this.nrudSoLuongHH.TabIndex = 7;
-            // 
-            // lblSoLuongHH
-            // 
-            this.lblSoLuongHH.AutoSize = true;
-            this.lblSoLuongHH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoLuongHH.ForeColor = System.Drawing.Color.White;
-            this.lblSoLuongHH.Location = new System.Drawing.Point(218, 43);
-            this.lblSoLuongHH.Name = "lblSoLuongHH";
-            this.lblSoLuongHH.Size = new System.Drawing.Size(73, 16);
-            this.lblSoLuongHH.TabIndex = 8;
-            this.lblSoLuongHH.Text = "Số lượng:";
-            // 
-            // cbbSoLuongHH
-            // 
-            this.cbbSoLuongHH.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbbSoLuongHH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbSoLuongHH.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbSoLuongHH.FormattingEnabled = true;
-            this.cbbSoLuongHH.Items.AddRange(new object[] {
-            ">",
-            "<",
-            "="});
-            this.cbbSoLuongHH.Location = new System.Drawing.Point(314, 39);
-            this.cbbSoLuongHH.Name = "cbbSoLuongHH";
-            this.cbbSoLuongHH.Size = new System.Drawing.Size(51, 23);
-            this.cbbSoLuongHH.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(218, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 16);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Nhà cung cấp:";
             // 
             // UC_HangHoa
             // 
@@ -432,16 +432,16 @@ namespace QuanLyShopGiayDep.UserControls
             this.Name = "UC_HangHoa";
             this.Size = new System.Drawing.Size(962, 558);
             this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHangHoaAdmin)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nrudSoLuongHH)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.statusStripTongDM.ResumeLayout(false);
             this.statusStripTongDM.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nrudSoLuongHH)).EndInit();
             this.ResumeLayout(false);
 
         }

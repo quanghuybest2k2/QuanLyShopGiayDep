@@ -353,6 +353,7 @@ namespace QuanLyShopGiayDep.UserControls
             // 
             // mtxtSDTTKAdmin
             // 
+            this.mtxtSDTTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mtxtSDTTKAdmin.Location = new System.Drawing.Point(241, 105);
             this.mtxtSDTTKAdmin.Mask = "000.000.0000";
             this.mtxtSDTTKAdmin.Name = "mtxtSDTTKAdmin";
@@ -361,6 +362,7 @@ namespace QuanLyShopGiayDep.UserControls
             // 
             // dtpNgayTaoTKAdmin
             // 
+            this.dtpNgayTaoTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtpNgayTaoTKAdmin.CustomFormat = "dd/MM/yyyy";
             this.dtpNgayTaoTKAdmin.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayTaoTKAdmin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -391,6 +393,7 @@ namespace QuanLyShopGiayDep.UserControls
             // 
             // chkKichHoatTKAdmin
             // 
+            this.chkKichHoatTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chkKichHoatTKAdmin.AutoSize = true;
             this.chkKichHoatTKAdmin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkKichHoatTKAdmin.Location = new System.Drawing.Point(594, 247);
