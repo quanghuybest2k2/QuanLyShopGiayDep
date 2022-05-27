@@ -95,17 +95,11 @@
     <Compile Include="UserControls\UC_TaiKhoan.Designer.cs">
       <DependentUpon>UC_TaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_TheLoai.cs">
+    <Compile Include="UserControls\UC_HangHoa.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_TheLoai.Designer.cs">
-      <DependentUpon>UC_TheLoai.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UC_TrangChu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UC_TrangChu.Designer.cs">
-      <DependentUpon>UC_TrangChu.cs</DependentUpon>
+    <Compile Include="UserControls\UC_HangHoa.Designer.cs">
+      <DependentUpon>UC_HangHoa.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmAdmin.resx">
       <DependentUpon>frmAdmin.cs</DependentUpon>
@@ -137,11 +131,8 @@
     <EmbeddedResource Include="UserControls\UC_TaiKhoan.resx">
       <DependentUpon>UC_TaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_TheLoai.resx">
-      <DependentUpon>UC_TheLoai.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_TrangChu.resx">
-      <DependentUpon>UC_TrangChu.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\UC_HangHoa.resx">
+      <DependentUpon>UC_HangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

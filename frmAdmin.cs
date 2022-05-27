@@ -16,7 +16,7 @@ namespace QuanLyShopGiayDep
         public frmAdmin()
         {
             InitializeComponent();
-            UC_TrangChu uc = new UC_TrangChu();
+            UC_KhachHang uc = new UC_KhachHang();
             addUserControl(uc);
         }
 
@@ -26,11 +26,6 @@ namespace QuanLyShopGiayDep
             panelBottom.Controls.Clear();
             panelBottom.Controls.Add(userControl);
             userControl.BringToFront();
-        }
-        private void btnTrangChuAdmin_Click(object sender, EventArgs e)
-        {
-            UC_TrangChu uc = new UC_TrangChu();
-            addUserControl(uc);
         }
 
         private void btnKhachHangAdmin_Click(object sender, EventArgs e)
@@ -45,12 +40,6 @@ namespace QuanLyShopGiayDep
             addUserControl(uc);
         }
 
-        private void btnTheLoaiAdmin_Click(object sender, EventArgs e)
-        {
-            UC_TheLoai uc = new UC_TheLoai();
-            addUserControl(uc);
-        }
-
         private void btnTaiKhoanAdmin_Click(object sender, EventArgs e)
         {
             UC_TaiKhoan uc = new UC_TaiKhoan();
@@ -60,6 +49,12 @@ namespace QuanLyShopGiayDep
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnHangHoaAdmin_Click(object sender, EventArgs e)
+        {
+            UC_HangHoa uc = new UC_HangHoa();
+            addUserControl(uc);
         }
     }
 }
