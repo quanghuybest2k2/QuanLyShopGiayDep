@@ -33,28 +33,28 @@ namespace QuanLyShopGiayDep.UserControls
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblIDAdmin = new ReaLTaiizor.Controls.FoxLabel();
+            this.lblIDKHAdmin = new ReaLTaiizor.Controls.FoxLabel();
             this.lblTenKHAdmin = new ReaLTaiizor.Controls.FoxLabel();
-            this.lblDiaChiAdmin = new ReaLTaiizor.Controls.FoxLabel();
-            this.mtxtSDTAdmin = new System.Windows.Forms.MaskedTextBox();
-            this.lblSDTAdmin = new ReaLTaiizor.Controls.FoxLabel();
+            this.lblDiaChiKHAdmin = new ReaLTaiizor.Controls.FoxLabel();
+            this.mtxtSDTKHAdmin = new System.Windows.Forms.MaskedTextBox();
+            this.lblSDTKHAdmin = new ReaLTaiizor.Controls.FoxLabel();
             this.dtgvKhachHangAdmin = new Guna.UI2.WinForms.Guna2DataGridView();
             this.colIDAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTenKHAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSDTAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDiaChiAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtIDAdmin = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtIDKHAdmin = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTenKHAdmin = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtDiaChiAdmin = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnLuuAdmin = new ReaLTaiizor.Controls.AirButton();
+            this.txtDiaChiKHAdmin = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnLuuKHAdmin = new ReaLTaiizor.Controls.AirButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachHangAdmin)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblIDAdmin
+            // lblIDKHAdmin
             // 
-            resources.ApplyResources(this.lblIDAdmin, "lblIDAdmin");
-            this.lblIDAdmin.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblIDAdmin.Name = "lblIDAdmin";
+            resources.ApplyResources(this.lblIDKHAdmin, "lblIDKHAdmin");
+            this.lblIDKHAdmin.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblIDKHAdmin.Name = "lblIDKHAdmin";
             // 
             // lblTenKHAdmin
             // 
@@ -62,22 +62,22 @@ namespace QuanLyShopGiayDep.UserControls
             this.lblTenKHAdmin.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblTenKHAdmin.Name = "lblTenKHAdmin";
             // 
-            // lblDiaChiAdmin
+            // lblDiaChiKHAdmin
             // 
-            resources.ApplyResources(this.lblDiaChiAdmin, "lblDiaChiAdmin");
-            this.lblDiaChiAdmin.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblDiaChiAdmin.Name = "lblDiaChiAdmin";
+            resources.ApplyResources(this.lblDiaChiKHAdmin, "lblDiaChiKHAdmin");
+            this.lblDiaChiKHAdmin.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblDiaChiKHAdmin.Name = "lblDiaChiKHAdmin";
             // 
-            // mtxtSDTAdmin
+            // mtxtSDTKHAdmin
             // 
-            resources.ApplyResources(this.mtxtSDTAdmin, "mtxtSDTAdmin");
-            this.mtxtSDTAdmin.Name = "mtxtSDTAdmin";
+            resources.ApplyResources(this.mtxtSDTKHAdmin, "mtxtSDTKHAdmin");
+            this.mtxtSDTKHAdmin.Name = "mtxtSDTKHAdmin";
             // 
-            // lblSDTAdmin
+            // lblSDTKHAdmin
             // 
-            resources.ApplyResources(this.lblSDTAdmin, "lblSDTAdmin");
-            this.lblSDTAdmin.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblSDTAdmin.Name = "lblSDTAdmin";
+            resources.ApplyResources(this.lblSDTKHAdmin, "lblSDTKHAdmin");
+            this.lblSDTKHAdmin.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblSDTKHAdmin.Name = "lblSDTKHAdmin";
             // 
             // dtgvKhachHangAdmin
             // 
@@ -158,21 +158,21 @@ namespace QuanLyShopGiayDep.UserControls
             resources.ApplyResources(this.colDiaChiAdmin, "colDiaChiAdmin");
             this.colDiaChiAdmin.Name = "colDiaChiAdmin";
             // 
-            // txtIDAdmin
+            // txtIDKHAdmin
             // 
-            this.txtIDAdmin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtIDAdmin.DefaultText = "";
-            this.txtIDAdmin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtIDAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtIDAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIDAdmin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtIDAdmin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtIDAdmin, "txtIDAdmin");
-            this.txtIDAdmin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDAdmin.Name = "txtIDAdmin";
-            this.txtIDAdmin.PasswordChar = '\0';
-            this.txtIDAdmin.PlaceholderText = "";
-            this.txtIDAdmin.SelectedText = "";
+            this.txtIDKHAdmin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIDKHAdmin.DefaultText = "";
+            this.txtIDKHAdmin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIDKHAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIDKHAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDKHAdmin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIDKHAdmin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtIDKHAdmin, "txtIDKHAdmin");
+            this.txtIDKHAdmin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIDKHAdmin.Name = "txtIDKHAdmin";
+            this.txtIDKHAdmin.PasswordChar = '\0';
+            this.txtIDKHAdmin.PlaceholderText = "";
+            this.txtIDKHAdmin.SelectedText = "";
             // 
             // txtTenKHAdmin
             // 
@@ -190,47 +190,47 @@ namespace QuanLyShopGiayDep.UserControls
             this.txtTenKHAdmin.PlaceholderText = "";
             this.txtTenKHAdmin.SelectedText = "";
             // 
-            // txtDiaChiAdmin
+            // txtDiaChiKHAdmin
             // 
-            this.txtDiaChiAdmin.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDiaChiAdmin.DefaultText = "";
-            this.txtDiaChiAdmin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDiaChiAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDiaChiAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDiaChiAdmin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDiaChiAdmin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            resources.ApplyResources(this.txtDiaChiAdmin, "txtDiaChiAdmin");
-            this.txtDiaChiAdmin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDiaChiAdmin.Name = "txtDiaChiAdmin";
-            this.txtDiaChiAdmin.PasswordChar = '\0';
-            this.txtDiaChiAdmin.PlaceholderText = "";
-            this.txtDiaChiAdmin.SelectedText = "";
+            this.txtDiaChiKHAdmin.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDiaChiKHAdmin.DefaultText = "";
+            this.txtDiaChiKHAdmin.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDiaChiKHAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDiaChiKHAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDiaChiKHAdmin.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDiaChiKHAdmin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.txtDiaChiKHAdmin, "txtDiaChiKHAdmin");
+            this.txtDiaChiKHAdmin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDiaChiKHAdmin.Name = "txtDiaChiKHAdmin";
+            this.txtDiaChiKHAdmin.PasswordChar = '\0';
+            this.txtDiaChiKHAdmin.PlaceholderText = "";
+            this.txtDiaChiKHAdmin.SelectedText = "";
             // 
-            // btnLuuAdmin
+            // btnLuuKHAdmin
             // 
-            this.btnLuuAdmin.BackColor = System.Drawing.Color.Gray;
-            this.btnLuuAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLuuAdmin.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
-            resources.ApplyResources(this.btnLuuAdmin, "btnLuuAdmin");
-            this.btnLuuAdmin.Image = null;
-            this.btnLuuAdmin.Name = "btnLuuAdmin";
-            this.btnLuuAdmin.NoRounding = false;
-            this.btnLuuAdmin.Transparent = false;
+            this.btnLuuKHAdmin.BackColor = System.Drawing.Color.Silver;
+            this.btnLuuKHAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLuuKHAdmin.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
+            resources.ApplyResources(this.btnLuuKHAdmin, "btnLuuKHAdmin");
+            this.btnLuuKHAdmin.Image = null;
+            this.btnLuuKHAdmin.Name = "btnLuuKHAdmin";
+            this.btnLuuKHAdmin.NoRounding = false;
+            this.btnLuuKHAdmin.Transparent = false;
             // 
             // UC_KhachHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
-            this.Controls.Add(this.btnLuuAdmin);
-            this.Controls.Add(this.txtDiaChiAdmin);
+            this.Controls.Add(this.btnLuuKHAdmin);
+            this.Controls.Add(this.txtDiaChiKHAdmin);
             this.Controls.Add(this.txtTenKHAdmin);
-            this.Controls.Add(this.txtIDAdmin);
+            this.Controls.Add(this.txtIDKHAdmin);
             this.Controls.Add(this.dtgvKhachHangAdmin);
-            this.Controls.Add(this.mtxtSDTAdmin);
-            this.Controls.Add(this.lblDiaChiAdmin);
-            this.Controls.Add(this.lblSDTAdmin);
+            this.Controls.Add(this.mtxtSDTKHAdmin);
+            this.Controls.Add(this.lblDiaChiKHAdmin);
+            this.Controls.Add(this.lblSDTKHAdmin);
             this.Controls.Add(this.lblTenKHAdmin);
-            this.Controls.Add(this.lblIDAdmin);
+            this.Controls.Add(this.lblIDKHAdmin);
             this.Name = "UC_KhachHang";
             resources.ApplyResources(this, "$this");
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachHangAdmin)).EndInit();
@@ -240,19 +240,19 @@ namespace QuanLyShopGiayDep.UserControls
         }
 
         #endregion
-        private ReaLTaiizor.Controls.FoxLabel lblIDAdmin;
+        private ReaLTaiizor.Controls.FoxLabel lblIDKHAdmin;
         private ReaLTaiizor.Controls.FoxLabel lblTenKHAdmin;
-        private ReaLTaiizor.Controls.FoxLabel lblDiaChiAdmin;
-        private System.Windows.Forms.MaskedTextBox mtxtSDTAdmin;
-        private ReaLTaiizor.Controls.FoxLabel lblSDTAdmin;
+        private ReaLTaiizor.Controls.FoxLabel lblDiaChiKHAdmin;
+        private System.Windows.Forms.MaskedTextBox mtxtSDTKHAdmin;
+        private ReaLTaiizor.Controls.FoxLabel lblSDTKHAdmin;
         private Guna.UI2.WinForms.Guna2DataGridView dtgvKhachHangAdmin;
         private System.Windows.Forms.DataGridViewTextBoxColumn colIDAdmin;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTenKHAdmin;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSDTAdmin;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDiaChiAdmin;
-        private Guna.UI2.WinForms.Guna2TextBox txtIDAdmin;
+        private Guna.UI2.WinForms.Guna2TextBox txtIDKHAdmin;
         private Guna.UI2.WinForms.Guna2TextBox txtTenKHAdmin;
-        private Guna.UI2.WinForms.Guna2TextBox txtDiaChiAdmin;
-        private ReaLTaiizor.Controls.AirButton btnLuuAdmin;
+        private Guna.UI2.WinForms.Guna2TextBox txtDiaChiKHAdmin;
+        private ReaLTaiizor.Controls.AirButton btnLuuKHAdmin;
     }
 }

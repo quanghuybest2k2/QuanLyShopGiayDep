@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyShopGiayDep.UserControls
 {
-    public partial class UC_TrangChu : UserControl
+    public partial class UC_HangHoa : UserControl
     {
-        public UC_TrangChu()
+        public UC_HangHoa()
         {
             InitializeComponent();
         }
