@@ -30,34 +30,50 @@ namespace QuanLyShopGiayDep
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
-            this.panelTop = new System.Windows.Forms.Panel();
+            this.panelTopAdmin = new System.Windows.Forms.Panel();
+            this.btnMinimizeAdmin = new ReaLTaiizor.Controls.AirButton();
             this.btnExitAdmin = new ReaLTaiizor.Controls.AirButton();
-            this.lblAdminTieuDe = new System.Windows.Forms.Label();
-            this.pbAdminTieuDe = new System.Windows.Forms.PictureBox();
-            this.paneCenter = new System.Windows.Forms.Panel();
+            this.lblTieuDeAdmin = new System.Windows.Forms.Label();
+            this.pbHinhAdmin = new System.Windows.Forms.PictureBox();
+            this.paneCenterAdmin = new System.Windows.Forms.Panel();
             this.btnTaiKhoanAdmin = new Guna.UI2.WinForms.Guna2Button();
             this.btnNhaCCAdmin = new Guna.UI2.WinForms.Guna2Button();
             this.btnHangHoaAdmin = new Guna.UI2.WinForms.Guna2Button();
             this.btnKhachHangAdmin = new Guna.UI2.WinForms.Guna2Button();
             this.panelBottom = new System.Windows.Forms.Panel();
-            this.btnMinimizeAdmin = new ReaLTaiizor.Controls.AirButton();
-            this.panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAdminTieuDe)).BeginInit();
-            this.paneCenter.SuspendLayout();
+            this.panelTopAdmin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHinhAdmin)).BeginInit();
+            this.paneCenterAdmin.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelTop
+            // panelTopAdmin
             // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
-            this.panelTop.Controls.Add(this.btnMinimizeAdmin);
-            this.panelTop.Controls.Add(this.btnExitAdmin);
-            this.panelTop.Controls.Add(this.lblAdminTieuDe);
-            this.panelTop.Controls.Add(this.pbAdminTieuDe);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(990, 62);
-            this.panelTop.TabIndex = 0;
+            this.panelTopAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.panelTopAdmin.Controls.Add(this.btnMinimizeAdmin);
+            this.panelTopAdmin.Controls.Add(this.btnExitAdmin);
+            this.panelTopAdmin.Controls.Add(this.lblTieuDeAdmin);
+            this.panelTopAdmin.Controls.Add(this.pbHinhAdmin);
+            this.panelTopAdmin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTopAdmin.Location = new System.Drawing.Point(0, 0);
+            this.panelTopAdmin.Name = "panelTopAdmin";
+            this.panelTopAdmin.Size = new System.Drawing.Size(990, 62);
+            this.panelTopAdmin.TabIndex = 0;
+            // 
+            // btnMinimizeAdmin
+            // 
+            this.btnMinimizeAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizeAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizeAdmin.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
+            this.btnMinimizeAdmin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMinimizeAdmin.Image = null;
+            this.btnMinimizeAdmin.Location = new System.Drawing.Point(906, 12);
+            this.btnMinimizeAdmin.Name = "btnMinimizeAdmin";
+            this.btnMinimizeAdmin.NoRounding = false;
+            this.btnMinimizeAdmin.Size = new System.Drawing.Size(33, 29);
+            this.btnMinimizeAdmin.TabIndex = 5;
+            this.btnMinimizeAdmin.Text = "-";
+            this.btnMinimizeAdmin.Transparent = false;
+            this.btnMinimizeAdmin.Click += new System.EventHandler(this.btnMinimizeAdmin_Click);
             // 
             // btnExitAdmin
             // 
@@ -75,39 +91,39 @@ namespace QuanLyShopGiayDep
             this.btnExitAdmin.Transparent = false;
             this.btnExitAdmin.Click += new System.EventHandler(this.btnExitAdmin_Click);
             // 
-            // lblAdminTieuDe
+            // lblTieuDeAdmin
             // 
-            this.lblAdminTieuDe.AutoSize = true;
-            this.lblAdminTieuDe.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminTieuDe.ForeColor = System.Drawing.Color.White;
-            this.lblAdminTieuDe.Location = new System.Drawing.Point(54, 24);
-            this.lblAdminTieuDe.Name = "lblAdminTieuDe";
-            this.lblAdminTieuDe.Size = new System.Drawing.Size(175, 18);
-            this.lblAdminTieuDe.TabIndex = 0;
-            this.lblAdminTieuDe.Text = "Quản lý shop giày dép";
+            this.lblTieuDeAdmin.AutoSize = true;
+            this.lblTieuDeAdmin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTieuDeAdmin.ForeColor = System.Drawing.Color.White;
+            this.lblTieuDeAdmin.Location = new System.Drawing.Point(54, 24);
+            this.lblTieuDeAdmin.Name = "lblTieuDeAdmin";
+            this.lblTieuDeAdmin.Size = new System.Drawing.Size(175, 18);
+            this.lblTieuDeAdmin.TabIndex = 0;
+            this.lblTieuDeAdmin.Text = "Quản lý shop giày dép";
             // 
-            // pbAdminTieuDe
+            // pbHinhAdmin
             // 
-            this.pbAdminTieuDe.Image = ((System.Drawing.Image)(resources.GetObject("pbAdminTieuDe.Image")));
-            this.pbAdminTieuDe.Location = new System.Drawing.Point(12, 12);
-            this.pbAdminTieuDe.Name = "pbAdminTieuDe";
-            this.pbAdminTieuDe.Size = new System.Drawing.Size(36, 44);
-            this.pbAdminTieuDe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAdminTieuDe.TabIndex = 0;
-            this.pbAdminTieuDe.TabStop = false;
+            this.pbHinhAdmin.Image = ((System.Drawing.Image)(resources.GetObject("pbHinhAdmin.Image")));
+            this.pbHinhAdmin.Location = new System.Drawing.Point(12, 12);
+            this.pbHinhAdmin.Name = "pbHinhAdmin";
+            this.pbHinhAdmin.Size = new System.Drawing.Size(36, 44);
+            this.pbHinhAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbHinhAdmin.TabIndex = 0;
+            this.pbHinhAdmin.TabStop = false;
             // 
-            // paneCenter
+            // paneCenterAdmin
             // 
-            this.paneCenter.BackColor = System.Drawing.Color.White;
-            this.paneCenter.Controls.Add(this.btnTaiKhoanAdmin);
-            this.paneCenter.Controls.Add(this.btnNhaCCAdmin);
-            this.paneCenter.Controls.Add(this.btnHangHoaAdmin);
-            this.paneCenter.Controls.Add(this.btnKhachHangAdmin);
-            this.paneCenter.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneCenter.Location = new System.Drawing.Point(0, 62);
-            this.paneCenter.Name = "paneCenter";
-            this.paneCenter.Size = new System.Drawing.Size(990, 48);
-            this.paneCenter.TabIndex = 1;
+            this.paneCenterAdmin.BackColor = System.Drawing.Color.White;
+            this.paneCenterAdmin.Controls.Add(this.btnTaiKhoanAdmin);
+            this.paneCenterAdmin.Controls.Add(this.btnNhaCCAdmin);
+            this.paneCenterAdmin.Controls.Add(this.btnHangHoaAdmin);
+            this.paneCenterAdmin.Controls.Add(this.btnKhachHangAdmin);
+            this.paneCenterAdmin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneCenterAdmin.Location = new System.Drawing.Point(0, 62);
+            this.paneCenterAdmin.Name = "paneCenterAdmin";
+            this.paneCenterAdmin.Size = new System.Drawing.Size(990, 48);
+            this.paneCenterAdmin.TabIndex = 1;
             // 
             // btnTaiKhoanAdmin
             // 
@@ -180,7 +196,7 @@ namespace QuanLyShopGiayDep
             this.btnKhachHangAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnKhachHangAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnKhachHangAdmin.FillColor = System.Drawing.Color.White;
-            this.btnKhachHangAdmin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHangAdmin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnKhachHangAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnKhachHangAdmin.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnKhachHangAdmin.Location = new System.Drawing.Point(0, 0);
@@ -199,48 +215,32 @@ namespace QuanLyShopGiayDep
             this.panelBottom.Size = new System.Drawing.Size(990, 560);
             this.panelBottom.TabIndex = 2;
             // 
-            // btnMinimizeAdmin
-            // 
-            this.btnMinimizeAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizeAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizeAdmin.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
-            this.btnMinimizeAdmin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMinimizeAdmin.Image = null;
-            this.btnMinimizeAdmin.Location = new System.Drawing.Point(906, 12);
-            this.btnMinimizeAdmin.Name = "btnMinimizeAdmin";
-            this.btnMinimizeAdmin.NoRounding = false;
-            this.btnMinimizeAdmin.Size = new System.Drawing.Size(33, 29);
-            this.btnMinimizeAdmin.TabIndex = 5;
-            this.btnMinimizeAdmin.Text = "-";
-            this.btnMinimizeAdmin.Transparent = false;
-            this.btnMinimizeAdmin.Click += new System.EventHandler(this.btnMinimizeAdmin_Click);
-            // 
             // frmAdmin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(990, 670);
             this.Controls.Add(this.panelBottom);
-            this.Controls.Add(this.paneCenter);
-            this.Controls.Add(this.panelTop);
+            this.Controls.Add(this.paneCenterAdmin);
+            this.Controls.Add(this.panelTopAdmin);
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAdmin";
-            this.panelTop.ResumeLayout(false);
-            this.panelTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAdminTieuDe)).EndInit();
-            this.paneCenter.ResumeLayout(false);
+            this.panelTopAdmin.ResumeLayout(false);
+            this.panelTopAdmin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHinhAdmin)).EndInit();
+            this.paneCenterAdmin.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.Panel paneCenter;
-        private System.Windows.Forms.Label lblAdminTieuDe;
-        private System.Windows.Forms.PictureBox pbAdminTieuDe;
+        private System.Windows.Forms.Panel panelTopAdmin;
+        private System.Windows.Forms.Panel paneCenterAdmin;
+        private System.Windows.Forms.Label lblTieuDeAdmin;
+        private System.Windows.Forms.PictureBox pbHinhAdmin;
         private System.Windows.Forms.Panel panelBottom;
         private Guna.UI2.WinForms.Guna2Button btnNhaCCAdmin;
         private Guna.UI2.WinForms.Guna2Button btnHangHoaAdmin;
