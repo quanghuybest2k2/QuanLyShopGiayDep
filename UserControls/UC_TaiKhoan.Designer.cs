@@ -29,27 +29,17 @@ namespace QuanLyShopGiayDep.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtgvTaiKhoanAdmin = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbbQuyenTKAdmin = new System.Windows.Forms.ComboBox();
-            this.btnLamMoiTKAdmin = new System.Windows.Forms.Button();
-            this.btnXoaTKAdmin = new System.Windows.Forms.Button();
-            this.btnLuuTKAdmin = new System.Windows.Forms.Button();
-            this.btnSuaTKAdmin = new System.Windows.Forms.Button();
-            this.txtTenNVTKAdmin = new System.Windows.Forms.TextBox();
-            this.txtCCCDTKAdmin = new System.Windows.Forms.TextBox();
-            this.txtMatKhauTKAdmin = new System.Windows.Forms.TextBox();
-            this.txtEmailTKAdmin = new System.Windows.Forms.TextBox();
-            this.txtTenDNTKAdmin = new System.Windows.Forms.TextBox();
+            this.dtgvTaiKhoan = new System.Windows.Forms.DataGridView();
+            this.cbbQuyenTaiKhoan = new System.Windows.Forms.ComboBox();
+            this.btnLamMoiTaiKhoan = new System.Windows.Forms.Button();
+            this.btnXoaTaiKhoan = new System.Windows.Forms.Button();
+            this.btnLuuTaiKhoan = new System.Windows.Forms.Button();
+            this.btnSuaTaiKhoan = new System.Windows.Forms.Button();
+            this.txtTenNVTaiKhoan = new System.Windows.Forms.TextBox();
+            this.txtCCCDTaiKhoan = new System.Windows.Forms.TextBox();
+            this.txtMatKhauTaiKhoan = new System.Windows.Forms.TextBox();
+            this.txtEmailTaiKhoan = new System.Windows.Forms.TextBox();
+            this.txtTenDNTaiKhoan = new System.Windows.Forms.TextBox();
             this.lblVaiTroTKAdmin = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lblMatKhauTKAdmin = new System.Windows.Forms.Label();
@@ -57,200 +47,161 @@ namespace QuanLyShopGiayDep.UserControls
             this.lblEmailTKAdmin = new System.Windows.Forms.Label();
             this.lblTenNVTKAdmin = new System.Windows.Forms.Label();
             this.lblSDTTKAdmin = new System.Windows.Forms.Label();
-            this.lblTieuDeTKAdmin = new System.Windows.Forms.Label();
+            this.lblTieuDeTaiKhoan = new System.Windows.Forms.Label();
             this.lblTenDNTKAdmin = new System.Windows.Forms.Label();
-            this.mtxtSDTTKAdmin = new System.Windows.Forms.MaskedTextBox();
-            this.dtpNgayTaoTKAdmin = new System.Windows.Forms.DateTimePicker();
+            this.mtxtSDTTaiKhoan = new System.Windows.Forms.MaskedTextBox();
+            this.dtpNgayTaoTaiKhoan = new System.Windows.Forms.DateTimePicker();
             this.lblDiaChiTKAdmin = new System.Windows.Forms.Label();
-            this.txtDiaChiTKAdmin = new System.Windows.Forms.TextBox();
-            this.chkKichHoatTKAdmin = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvTaiKhoanAdmin)).BeginInit();
+            this.txtDiaChiTaiKhoan = new System.Windows.Forms.TextBox();
+            this.chkKichHoatTaiKhoan = new System.Windows.Forms.CheckBox();
+            this.colMaTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTenDangNhapTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTenNVTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCCCDTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSDTTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEmailTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDiaChiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colVaiTroTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTrangThaiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNgayTaoTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvTaiKhoan)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtgvTaiKhoanAdmin
+            // dtgvTaiKhoan
             // 
-            this.dtgvTaiKhoanAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtgvTaiKhoanAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvTaiKhoanAdmin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column10,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9});
-            this.dtgvTaiKhoanAdmin.Location = new System.Drawing.Point(0, 335);
-            this.dtgvTaiKhoanAdmin.Name = "dtgvTaiKhoanAdmin";
-            this.dtgvTaiKhoanAdmin.Size = new System.Drawing.Size(959, 183);
-            this.dtgvTaiKhoanAdmin.TabIndex = 13;
+            this.dtgvTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtgvTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvTaiKhoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colMaTaiKhoan,
+            this.colTenDangNhapTaiKhoan,
+            this.colTenNVTaiKhoan,
+            this.colCCCDTaiKhoan,
+            this.colSDTTaiKhoan,
+            this.colEmailTaiKhoan,
+            this.colDiaChiTaiKhoan,
+            this.colVaiTroTaiKhoan,
+            this.colTrangThaiTaiKhoan,
+            this.colNgayTaoTaiKhoan});
+            this.dtgvTaiKhoan.Location = new System.Drawing.Point(0, 335);
+            this.dtgvTaiKhoan.Name = "dtgvTaiKhoan";
+            this.dtgvTaiKhoan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvTaiKhoan.Size = new System.Drawing.Size(959, 183);
+            this.dtgvTaiKhoan.TabIndex = 13;
             // 
-            // Column1
+            // cbbQuyenTaiKhoan
             // 
-            this.Column1.HeaderText = "Mã tài khoản";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên đăng nhập";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Tên nhân viên";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Số CCCD";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Số điện thoại";
-            this.Column5.Name = "Column5";
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Email";
-            this.Column10.Name = "Column10";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Địa chỉ";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Vai trò";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Trạng thái";
-            this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Ngày tạo";
-            this.Column9.Name = "Column9";
-            // 
-            // cbbQuyenTKAdmin
-            // 
-            this.cbbQuyenTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cbbQuyenTKAdmin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbQuyenTKAdmin.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbQuyenTKAdmin.FormattingEnabled = true;
-            this.cbbQuyenTKAdmin.Items.AddRange(new object[] {
+            this.cbbQuyenTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbbQuyenTaiKhoan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbQuyenTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbQuyenTaiKhoan.FormattingEnabled = true;
+            this.cbbQuyenTaiKhoan.Items.AddRange(new object[] {
             "Quản lý",
             "Nhân viên"});
-            this.cbbQuyenTKAdmin.Location = new System.Drawing.Point(594, 204);
-            this.cbbQuyenTKAdmin.Name = "cbbQuyenTKAdmin";
-            this.cbbQuyenTKAdmin.Size = new System.Drawing.Size(244, 23);
-            this.cbbQuyenTKAdmin.TabIndex = 9;
+            this.cbbQuyenTaiKhoan.Location = new System.Drawing.Point(594, 204);
+            this.cbbQuyenTaiKhoan.Name = "cbbQuyenTaiKhoan";
+            this.cbbQuyenTaiKhoan.Size = new System.Drawing.Size(244, 23);
+            this.cbbQuyenTaiKhoan.TabIndex = 9;
             // 
-            // btnLamMoiTKAdmin
+            // btnLamMoiTaiKhoan
             // 
-            this.btnLamMoiTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLamMoiTKAdmin.BackColor = System.Drawing.Color.Tomato;
-            this.btnLamMoiTKAdmin.FlatAppearance.BorderSize = 0;
-            this.btnLamMoiTKAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLamMoiTKAdmin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoiTKAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoiTKAdmin.Location = new System.Drawing.Point(554, 291);
-            this.btnLamMoiTKAdmin.Name = "btnLamMoiTKAdmin";
-            this.btnLamMoiTKAdmin.Size = new System.Drawing.Size(124, 38);
-            this.btnLamMoiTKAdmin.TabIndex = 11;
-            this.btnLamMoiTKAdmin.Text = "Làm mới";
-            this.btnLamMoiTKAdmin.UseVisualStyleBackColor = false;
+            this.btnLamMoiTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLamMoiTaiKhoan.BackColor = System.Drawing.Color.Tomato;
+            this.btnLamMoiTaiKhoan.FlatAppearance.BorderSize = 0;
+            this.btnLamMoiTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLamMoiTaiKhoan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoiTaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.btnLamMoiTaiKhoan.Location = new System.Drawing.Point(554, 291);
+            this.btnLamMoiTaiKhoan.Name = "btnLamMoiTaiKhoan";
+            this.btnLamMoiTaiKhoan.Size = new System.Drawing.Size(124, 38);
+            this.btnLamMoiTaiKhoan.TabIndex = 11;
+            this.btnLamMoiTaiKhoan.Text = "Làm mới";
+            this.btnLamMoiTaiKhoan.UseVisualStyleBackColor = false;
             // 
-            // btnXoaTKAdmin
+            // btnXoaTaiKhoan
             // 
-            this.btnXoaTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnXoaTKAdmin.BackColor = System.Drawing.Color.Red;
-            this.btnXoaTKAdmin.FlatAppearance.BorderSize = 0;
-            this.btnXoaTKAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoaTKAdmin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaTKAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnXoaTKAdmin.Location = new System.Drawing.Point(594, 524);
-            this.btnXoaTKAdmin.Name = "btnXoaTKAdmin";
-            this.btnXoaTKAdmin.Size = new System.Drawing.Size(111, 38);
-            this.btnXoaTKAdmin.TabIndex = 14;
-            this.btnXoaTKAdmin.Text = "Xóa";
-            this.btnXoaTKAdmin.UseVisualStyleBackColor = false;
+            this.btnXoaTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnXoaTaiKhoan.BackColor = System.Drawing.Color.Red;
+            this.btnXoaTaiKhoan.FlatAppearance.BorderSize = 0;
+            this.btnXoaTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoaTaiKhoan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaTaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.btnXoaTaiKhoan.Location = new System.Drawing.Point(594, 524);
+            this.btnXoaTaiKhoan.Name = "btnXoaTaiKhoan";
+            this.btnXoaTaiKhoan.Size = new System.Drawing.Size(111, 38);
+            this.btnXoaTaiKhoan.TabIndex = 14;
+            this.btnXoaTaiKhoan.Text = "Xóa";
+            this.btnXoaTaiKhoan.UseVisualStyleBackColor = false;
             // 
-            // btnLuuTKAdmin
+            // btnLuuTaiKhoan
             // 
-            this.btnLuuTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLuuTKAdmin.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnLuuTKAdmin.FlatAppearance.BorderSize = 0;
-            this.btnLuuTKAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuuTKAdmin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuTKAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnLuuTKAdmin.Location = new System.Drawing.Point(708, 291);
-            this.btnLuuTKAdmin.Name = "btnLuuTKAdmin";
-            this.btnLuuTKAdmin.Size = new System.Drawing.Size(141, 38);
-            this.btnLuuTKAdmin.TabIndex = 12;
-            this.btnLuuTKAdmin.Text = "Lưu";
-            this.btnLuuTKAdmin.UseVisualStyleBackColor = false;
+            this.btnLuuTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLuuTaiKhoan.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnLuuTaiKhoan.FlatAppearance.BorderSize = 0;
+            this.btnLuuTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuuTaiKhoan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuuTaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.btnLuuTaiKhoan.Location = new System.Drawing.Point(708, 291);
+            this.btnLuuTaiKhoan.Name = "btnLuuTaiKhoan";
+            this.btnLuuTaiKhoan.Size = new System.Drawing.Size(141, 38);
+            this.btnLuuTaiKhoan.TabIndex = 12;
+            this.btnLuuTaiKhoan.Text = "Lưu";
+            this.btnLuuTaiKhoan.UseVisualStyleBackColor = false;
             // 
-            // btnSuaTKAdmin
+            // btnSuaTaiKhoan
             // 
-            this.btnSuaTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSuaTKAdmin.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnSuaTKAdmin.FlatAppearance.BorderSize = 0;
-            this.btnSuaTKAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuaTKAdmin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaTKAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnSuaTKAdmin.Location = new System.Drawing.Point(727, 524);
-            this.btnSuaTKAdmin.Name = "btnSuaTKAdmin";
-            this.btnSuaTKAdmin.Size = new System.Drawing.Size(111, 38);
-            this.btnSuaTKAdmin.TabIndex = 15;
-            this.btnSuaTKAdmin.Text = "Chỉnh Sửa";
-            this.btnSuaTKAdmin.UseVisualStyleBackColor = false;
+            this.btnSuaTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSuaTaiKhoan.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSuaTaiKhoan.FlatAppearance.BorderSize = 0;
+            this.btnSuaTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuaTaiKhoan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaTaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.btnSuaTaiKhoan.Location = new System.Drawing.Point(727, 524);
+            this.btnSuaTaiKhoan.Name = "btnSuaTaiKhoan";
+            this.btnSuaTaiKhoan.Size = new System.Drawing.Size(111, 38);
+            this.btnSuaTaiKhoan.TabIndex = 15;
+            this.btnSuaTaiKhoan.Text = "Chỉnh Sửa";
+            this.btnSuaTaiKhoan.UseVisualStyleBackColor = false;
             // 
-            // txtTenNVTKAdmin
+            // txtTenNVTaiKhoan
             // 
-            this.txtTenNVTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenNVTKAdmin.Location = new System.Drawing.Point(594, 56);
-            this.txtTenNVTKAdmin.Name = "txtTenNVTKAdmin";
-            this.txtTenNVTKAdmin.Size = new System.Drawing.Size(244, 20);
-            this.txtTenNVTKAdmin.TabIndex = 6;
+            this.txtTenNVTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTenNVTaiKhoan.Location = new System.Drawing.Point(594, 56);
+            this.txtTenNVTaiKhoan.Name = "txtTenNVTaiKhoan";
+            this.txtTenNVTaiKhoan.Size = new System.Drawing.Size(244, 20);
+            this.txtTenNVTaiKhoan.TabIndex = 6;
             // 
-            // txtCCCDTKAdmin
+            // txtCCCDTaiKhoan
             // 
-            this.txtCCCDTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCCCDTKAdmin.Location = new System.Drawing.Point(594, 102);
-            this.txtCCCDTKAdmin.Name = "txtCCCDTKAdmin";
-            this.txtCCCDTKAdmin.Size = new System.Drawing.Size(244, 20);
-            this.txtCCCDTKAdmin.TabIndex = 7;
+            this.txtCCCDTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCCCDTaiKhoan.Location = new System.Drawing.Point(594, 102);
+            this.txtCCCDTaiKhoan.Name = "txtCCCDTaiKhoan";
+            this.txtCCCDTaiKhoan.Size = new System.Drawing.Size(244, 20);
+            this.txtCCCDTaiKhoan.TabIndex = 7;
             // 
-            // txtMatKhauTKAdmin
+            // txtMatKhauTaiKhoan
             // 
-            this.txtMatKhauTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMatKhauTKAdmin.Location = new System.Drawing.Point(241, 203);
-            this.txtMatKhauTKAdmin.Name = "txtMatKhauTKAdmin";
-            this.txtMatKhauTKAdmin.PasswordChar = '*';
-            this.txtMatKhauTKAdmin.Size = new System.Drawing.Size(199, 20);
-            this.txtMatKhauTKAdmin.TabIndex = 4;
+            this.txtMatKhauTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMatKhauTaiKhoan.Location = new System.Drawing.Point(241, 203);
+            this.txtMatKhauTaiKhoan.Name = "txtMatKhauTaiKhoan";
+            this.txtMatKhauTaiKhoan.PasswordChar = '*';
+            this.txtMatKhauTaiKhoan.Size = new System.Drawing.Size(199, 20);
+            this.txtMatKhauTaiKhoan.TabIndex = 4;
             // 
-            // txtEmailTKAdmin
+            // txtEmailTaiKhoan
             // 
-            this.txtEmailTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmailTKAdmin.Location = new System.Drawing.Point(241, 156);
-            this.txtEmailTKAdmin.Name = "txtEmailTKAdmin";
-            this.txtEmailTKAdmin.Size = new System.Drawing.Size(199, 20);
-            this.txtEmailTKAdmin.TabIndex = 3;
+            this.txtEmailTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmailTaiKhoan.Location = new System.Drawing.Point(241, 156);
+            this.txtEmailTaiKhoan.Name = "txtEmailTaiKhoan";
+            this.txtEmailTaiKhoan.Size = new System.Drawing.Size(199, 20);
+            this.txtEmailTaiKhoan.TabIndex = 3;
             // 
-            // txtTenDNTKAdmin
+            // txtTenDNTaiKhoan
             // 
-            this.txtTenDNTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTenDNTKAdmin.Location = new System.Drawing.Point(241, 54);
-            this.txtTenDNTKAdmin.Name = "txtTenDNTKAdmin";
-            this.txtTenDNTKAdmin.Size = new System.Drawing.Size(199, 20);
-            this.txtTenDNTKAdmin.TabIndex = 1;
+            this.txtTenDNTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTenDNTaiKhoan.Location = new System.Drawing.Point(241, 54);
+            this.txtTenDNTaiKhoan.Name = "txtTenDNTaiKhoan";
+            this.txtTenDNTaiKhoan.Size = new System.Drawing.Size(199, 20);
+            this.txtTenDNTaiKhoan.TabIndex = 1;
             // 
             // lblVaiTroTKAdmin
             // 
@@ -329,16 +280,16 @@ namespace QuanLyShopGiayDep.UserControls
             this.lblSDTTKAdmin.TabIndex = 26;
             this.lblSDTTKAdmin.Text = "Số điện thoại:";
             // 
-            // lblTieuDeTKAdmin
+            // lblTieuDeTaiKhoan
             // 
-            this.lblTieuDeTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTieuDeTKAdmin.AutoSize = true;
-            this.lblTieuDeTKAdmin.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTieuDeTKAdmin.Location = new System.Drawing.Point(404, 6);
-            this.lblTieuDeTKAdmin.Name = "lblTieuDeTKAdmin";
-            this.lblTieuDeTKAdmin.Size = new System.Drawing.Size(213, 28);
-            this.lblTieuDeTKAdmin.TabIndex = 33;
-            this.lblTieuDeTKAdmin.Text = "Quản lý tài khoản";
+            this.lblTieuDeTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTieuDeTaiKhoan.AutoSize = true;
+            this.lblTieuDeTaiKhoan.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTieuDeTaiKhoan.Location = new System.Drawing.Point(404, 6);
+            this.lblTieuDeTaiKhoan.Name = "lblTieuDeTaiKhoan";
+            this.lblTieuDeTaiKhoan.Size = new System.Drawing.Size(213, 28);
+            this.lblTieuDeTaiKhoan.TabIndex = 33;
+            this.lblTieuDeTaiKhoan.Text = "Quản lý tài khoản";
             // 
             // lblTenDNTKAdmin
             // 
@@ -351,25 +302,25 @@ namespace QuanLyShopGiayDep.UserControls
             this.lblTenDNTKAdmin.TabIndex = 25;
             this.lblTenDNTKAdmin.Text = "Tên đăng nhập:";
             // 
-            // mtxtSDTTKAdmin
+            // mtxtSDTTaiKhoan
             // 
-            this.mtxtSDTTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mtxtSDTTKAdmin.Location = new System.Drawing.Point(241, 105);
-            this.mtxtSDTTKAdmin.Mask = "000.000.0000";
-            this.mtxtSDTTKAdmin.Name = "mtxtSDTTKAdmin";
-            this.mtxtSDTTKAdmin.Size = new System.Drawing.Size(199, 20);
-            this.mtxtSDTTKAdmin.TabIndex = 2;
+            this.mtxtSDTTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mtxtSDTTaiKhoan.Location = new System.Drawing.Point(241, 105);
+            this.mtxtSDTTaiKhoan.Mask = "000.000.0000";
+            this.mtxtSDTTaiKhoan.Name = "mtxtSDTTaiKhoan";
+            this.mtxtSDTTaiKhoan.Size = new System.Drawing.Size(199, 20);
+            this.mtxtSDTTaiKhoan.TabIndex = 2;
             // 
-            // dtpNgayTaoTKAdmin
+            // dtpNgayTaoTaiKhoan
             // 
-            this.dtpNgayTaoTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpNgayTaoTKAdmin.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgayTaoTKAdmin.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayTaoTKAdmin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayTaoTKAdmin.Location = new System.Drawing.Point(594, 155);
-            this.dtpNgayTaoTKAdmin.Name = "dtpNgayTaoTKAdmin";
-            this.dtpNgayTaoTKAdmin.Size = new System.Drawing.Size(244, 22);
-            this.dtpNgayTaoTKAdmin.TabIndex = 8;
+            this.dtpNgayTaoTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpNgayTaoTaiKhoan.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgayTaoTaiKhoan.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayTaoTaiKhoan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayTaoTaiKhoan.Location = new System.Drawing.Point(594, 155);
+            this.dtpNgayTaoTaiKhoan.Name = "dtpNgayTaoTaiKhoan";
+            this.dtpNgayTaoTaiKhoan.Size = new System.Drawing.Size(244, 22);
+            this.dtpNgayTaoTaiKhoan.TabIndex = 8;
             // 
             // lblDiaChiTKAdmin
             // 
@@ -382,46 +333,96 @@ namespace QuanLyShopGiayDep.UserControls
             this.lblDiaChiTKAdmin.TabIndex = 30;
             this.lblDiaChiTKAdmin.Text = "Địa chỉ:";
             // 
-            // txtDiaChiTKAdmin
+            // txtDiaChiTaiKhoan
             // 
-            this.txtDiaChiTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDiaChiTKAdmin.Location = new System.Drawing.Point(241, 250);
-            this.txtDiaChiTKAdmin.Name = "txtDiaChiTKAdmin";
-            this.txtDiaChiTKAdmin.PasswordChar = '*';
-            this.txtDiaChiTKAdmin.Size = new System.Drawing.Size(199, 20);
-            this.txtDiaChiTKAdmin.TabIndex = 5;
+            this.txtDiaChiTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDiaChiTaiKhoan.Location = new System.Drawing.Point(241, 250);
+            this.txtDiaChiTaiKhoan.Name = "txtDiaChiTaiKhoan";
+            this.txtDiaChiTaiKhoan.PasswordChar = '*';
+            this.txtDiaChiTaiKhoan.Size = new System.Drawing.Size(199, 20);
+            this.txtDiaChiTaiKhoan.TabIndex = 5;
             // 
-            // chkKichHoatTKAdmin
+            // chkKichHoatTaiKhoan
             // 
-            this.chkKichHoatTKAdmin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.chkKichHoatTKAdmin.AutoSize = true;
-            this.chkKichHoatTKAdmin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkKichHoatTKAdmin.Location = new System.Drawing.Point(594, 247);
-            this.chkKichHoatTKAdmin.Name = "chkKichHoatTKAdmin";
-            this.chkKichHoatTKAdmin.Size = new System.Drawing.Size(98, 23);
-            this.chkKichHoatTKAdmin.TabIndex = 10;
-            this.chkKichHoatTKAdmin.Text = "kích hoạt";
-            this.chkKichHoatTKAdmin.UseVisualStyleBackColor = true;
+            this.chkKichHoatTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chkKichHoatTaiKhoan.AutoSize = true;
+            this.chkKichHoatTaiKhoan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkKichHoatTaiKhoan.Location = new System.Drawing.Point(594, 247);
+            this.chkKichHoatTaiKhoan.Name = "chkKichHoatTaiKhoan";
+            this.chkKichHoatTaiKhoan.Size = new System.Drawing.Size(98, 23);
+            this.chkKichHoatTaiKhoan.TabIndex = 10;
+            this.chkKichHoatTaiKhoan.Text = "kích hoạt";
+            this.chkKichHoatTaiKhoan.UseVisualStyleBackColor = true;
+            // 
+            // colMaTaiKhoan
+            // 
+            this.colMaTaiKhoan.HeaderText = "Mã tài khoản";
+            this.colMaTaiKhoan.Name = "colMaTaiKhoan";
+            // 
+            // colTenDangNhapTaiKhoan
+            // 
+            this.colTenDangNhapTaiKhoan.HeaderText = "Tên đăng nhập";
+            this.colTenDangNhapTaiKhoan.Name = "colTenDangNhapTaiKhoan";
+            // 
+            // colTenNVTaiKhoan
+            // 
+            this.colTenNVTaiKhoan.HeaderText = "Tên nhân viên";
+            this.colTenNVTaiKhoan.Name = "colTenNVTaiKhoan";
+            // 
+            // colCCCDTaiKhoan
+            // 
+            this.colCCCDTaiKhoan.HeaderText = "Số CCCD";
+            this.colCCCDTaiKhoan.Name = "colCCCDTaiKhoan";
+            // 
+            // colSDTTaiKhoan
+            // 
+            this.colSDTTaiKhoan.HeaderText = "Số điện thoại";
+            this.colSDTTaiKhoan.Name = "colSDTTaiKhoan";
+            // 
+            // colEmailTaiKhoan
+            // 
+            this.colEmailTaiKhoan.HeaderText = "Email";
+            this.colEmailTaiKhoan.Name = "colEmailTaiKhoan";
+            // 
+            // colDiaChiTaiKhoan
+            // 
+            this.colDiaChiTaiKhoan.HeaderText = "Địa chỉ";
+            this.colDiaChiTaiKhoan.Name = "colDiaChiTaiKhoan";
+            // 
+            // colVaiTroTaiKhoan
+            // 
+            this.colVaiTroTaiKhoan.HeaderText = "Vai trò";
+            this.colVaiTroTaiKhoan.Name = "colVaiTroTaiKhoan";
+            // 
+            // colTrangThaiTaiKhoan
+            // 
+            this.colTrangThaiTaiKhoan.HeaderText = "Trạng thái";
+            this.colTrangThaiTaiKhoan.Name = "colTrangThaiTaiKhoan";
+            // 
+            // colNgayTaoTaiKhoan
+            // 
+            this.colNgayTaoTaiKhoan.HeaderText = "Ngày tạo";
+            this.colNgayTaoTaiKhoan.Name = "colNgayTaoTaiKhoan";
             // 
             // UC_TaiKhoan
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
-            this.Controls.Add(this.chkKichHoatTKAdmin);
-            this.Controls.Add(this.dtpNgayTaoTKAdmin);
-            this.Controls.Add(this.mtxtSDTTKAdmin);
-            this.Controls.Add(this.dtgvTaiKhoanAdmin);
-            this.Controls.Add(this.cbbQuyenTKAdmin);
-            this.Controls.Add(this.btnLamMoiTKAdmin);
-            this.Controls.Add(this.btnXoaTKAdmin);
-            this.Controls.Add(this.btnLuuTKAdmin);
-            this.Controls.Add(this.btnSuaTKAdmin);
-            this.Controls.Add(this.txtTenNVTKAdmin);
-            this.Controls.Add(this.txtCCCDTKAdmin);
-            this.Controls.Add(this.txtDiaChiTKAdmin);
-            this.Controls.Add(this.txtMatKhauTKAdmin);
-            this.Controls.Add(this.txtEmailTKAdmin);
-            this.Controls.Add(this.txtTenDNTKAdmin);
+            this.Controls.Add(this.chkKichHoatTaiKhoan);
+            this.Controls.Add(this.dtpNgayTaoTaiKhoan);
+            this.Controls.Add(this.mtxtSDTTaiKhoan);
+            this.Controls.Add(this.dtgvTaiKhoan);
+            this.Controls.Add(this.cbbQuyenTaiKhoan);
+            this.Controls.Add(this.btnLamMoiTaiKhoan);
+            this.Controls.Add(this.btnXoaTaiKhoan);
+            this.Controls.Add(this.btnLuuTaiKhoan);
+            this.Controls.Add(this.btnSuaTaiKhoan);
+            this.Controls.Add(this.txtTenNVTaiKhoan);
+            this.Controls.Add(this.txtCCCDTaiKhoan);
+            this.Controls.Add(this.txtDiaChiTaiKhoan);
+            this.Controls.Add(this.txtMatKhauTaiKhoan);
+            this.Controls.Add(this.txtEmailTaiKhoan);
+            this.Controls.Add(this.txtTenDNTaiKhoan);
             this.Controls.Add(this.lblVaiTroTKAdmin);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblDiaChiTKAdmin);
@@ -430,12 +431,12 @@ namespace QuanLyShopGiayDep.UserControls
             this.Controls.Add(this.lblEmailTKAdmin);
             this.Controls.Add(this.lblTenNVTKAdmin);
             this.Controls.Add(this.lblSDTTKAdmin);
-            this.Controls.Add(this.lblTieuDeTKAdmin);
+            this.Controls.Add(this.lblTieuDeTaiKhoan);
             this.Controls.Add(this.lblTenDNTKAdmin);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "UC_TaiKhoan";
             this.Size = new System.Drawing.Size(962, 558);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvTaiKhoanAdmin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvTaiKhoan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,17 +444,17 @@ namespace QuanLyShopGiayDep.UserControls
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgvTaiKhoanAdmin;
-        private System.Windows.Forms.ComboBox cbbQuyenTKAdmin;
-        private System.Windows.Forms.Button btnLamMoiTKAdmin;
-        private System.Windows.Forms.Button btnXoaTKAdmin;
-        private System.Windows.Forms.Button btnLuuTKAdmin;
-        private System.Windows.Forms.Button btnSuaTKAdmin;
-        private System.Windows.Forms.TextBox txtTenNVTKAdmin;
-        private System.Windows.Forms.TextBox txtCCCDTKAdmin;
-        private System.Windows.Forms.TextBox txtMatKhauTKAdmin;
-        private System.Windows.Forms.TextBox txtEmailTKAdmin;
-        private System.Windows.Forms.TextBox txtTenDNTKAdmin;
+        private System.Windows.Forms.DataGridView dtgvTaiKhoan;
+        private System.Windows.Forms.ComboBox cbbQuyenTaiKhoan;
+        private System.Windows.Forms.Button btnLamMoiTaiKhoan;
+        private System.Windows.Forms.Button btnXoaTaiKhoan;
+        private System.Windows.Forms.Button btnLuuTaiKhoan;
+        private System.Windows.Forms.Button btnSuaTaiKhoan;
+        private System.Windows.Forms.TextBox txtTenNVTaiKhoan;
+        private System.Windows.Forms.TextBox txtCCCDTaiKhoan;
+        private System.Windows.Forms.TextBox txtMatKhauTaiKhoan;
+        private System.Windows.Forms.TextBox txtEmailTaiKhoan;
+        private System.Windows.Forms.TextBox txtTenDNTaiKhoan;
         private System.Windows.Forms.Label lblVaiTroTKAdmin;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblMatKhauTKAdmin;
@@ -461,22 +462,22 @@ namespace QuanLyShopGiayDep.UserControls
         private System.Windows.Forms.Label lblEmailTKAdmin;
         private System.Windows.Forms.Label lblTenNVTKAdmin;
         private System.Windows.Forms.Label lblSDTTKAdmin;
-        private System.Windows.Forms.Label lblTieuDeTKAdmin;
+        private System.Windows.Forms.Label lblTieuDeTaiKhoan;
         private System.Windows.Forms.Label lblTenDNTKAdmin;
-        private System.Windows.Forms.MaskedTextBox mtxtSDTTKAdmin;
-        private System.Windows.Forms.DateTimePicker dtpNgayTaoTKAdmin;
+        private System.Windows.Forms.MaskedTextBox mtxtSDTTaiKhoan;
+        private System.Windows.Forms.DateTimePicker dtpNgayTaoTaiKhoan;
         private System.Windows.Forms.Label lblDiaChiTKAdmin;
-        private System.Windows.Forms.TextBox txtDiaChiTKAdmin;
-        private System.Windows.Forms.CheckBox chkKichHoatTKAdmin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.TextBox txtDiaChiTaiKhoan;
+        private System.Windows.Forms.CheckBox chkKichHoatTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMaTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTenDangNhapTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTenNVTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCCCDTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSDTTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEmailTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDiaChiTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colVaiTroTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTrangThaiTaiKhoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNgayTaoTaiKhoan;
     }
 }

@@ -39,14 +39,14 @@ namespace QuanLyShopGiayDep.UserControls
             this.mtxtSDTKHAdmin = new System.Windows.Forms.MaskedTextBox();
             this.lblSDTKHAdmin = new ReaLTaiizor.Controls.FoxLabel();
             this.dtgvKhachHangAdmin = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.colIDAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTenKHAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSDTAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDiaChiAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtIDKHAdmin = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTenKHAdmin = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtDiaChiKHAdmin = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnLuuKHAdmin = new ReaLTaiizor.Controls.AirButton();
+            this.colIDAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTenKHAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSDTAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDiaChiAdmin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachHangAdmin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,26 +138,6 @@ namespace QuanLyShopGiayDep.UserControls
             this.dtgvKhachHangAdmin.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dtgvKhachHangAdmin.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // colIDAdmin
-            // 
-            resources.ApplyResources(this.colIDAdmin, "colIDAdmin");
-            this.colIDAdmin.Name = "colIDAdmin";
-            // 
-            // colTenKHAdmin
-            // 
-            resources.ApplyResources(this.colTenKHAdmin, "colTenKHAdmin");
-            this.colTenKHAdmin.Name = "colTenKHAdmin";
-            // 
-            // colSDTAdmin
-            // 
-            resources.ApplyResources(this.colSDTAdmin, "colSDTAdmin");
-            this.colSDTAdmin.Name = "colSDTAdmin";
-            // 
-            // colDiaChiAdmin
-            // 
-            resources.ApplyResources(this.colDiaChiAdmin, "colDiaChiAdmin");
-            this.colDiaChiAdmin.Name = "colDiaChiAdmin";
-            // 
             // txtIDKHAdmin
             // 
             this.txtIDKHAdmin.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -217,6 +197,30 @@ namespace QuanLyShopGiayDep.UserControls
             this.btnLuuKHAdmin.NoRounding = false;
             this.btnLuuKHAdmin.Transparent = false;
             // 
+            // colIDAdmin
+            // 
+            this.colIDAdmin.FillWeight = 46.31078F;
+            resources.ApplyResources(this.colIDAdmin, "colIDAdmin");
+            this.colIDAdmin.Name = "colIDAdmin";
+            // 
+            // colTenKHAdmin
+            // 
+            this.colTenKHAdmin.FillWeight = 96.66614F;
+            resources.ApplyResources(this.colTenKHAdmin, "colTenKHAdmin");
+            this.colTenKHAdmin.Name = "colTenKHAdmin";
+            // 
+            // colSDTAdmin
+            // 
+            this.colSDTAdmin.FillWeight = 101.5228F;
+            resources.ApplyResources(this.colSDTAdmin, "colSDTAdmin");
+            this.colSDTAdmin.Name = "colSDTAdmin";
+            // 
+            // colDiaChiAdmin
+            // 
+            this.colDiaChiAdmin.FillWeight = 155.5002F;
+            resources.ApplyResources(this.colDiaChiAdmin, "colDiaChiAdmin");
+            this.colDiaChiAdmin.Name = "colDiaChiAdmin";
+            // 
             // UC_KhachHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -246,13 +250,13 @@ namespace QuanLyShopGiayDep.UserControls
         private System.Windows.Forms.MaskedTextBox mtxtSDTKHAdmin;
         private ReaLTaiizor.Controls.FoxLabel lblSDTKHAdmin;
         private Guna.UI2.WinForms.Guna2DataGridView dtgvKhachHangAdmin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colIDAdmin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTenKHAdmin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colSDTAdmin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDiaChiAdmin;
         private Guna.UI2.WinForms.Guna2TextBox txtIDKHAdmin;
         private Guna.UI2.WinForms.Guna2TextBox txtTenKHAdmin;
         private Guna.UI2.WinForms.Guna2TextBox txtDiaChiKHAdmin;
         private ReaLTaiizor.Controls.AirButton btnLuuKHAdmin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colIDAdmin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTenKHAdmin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSDTAdmin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDiaChiAdmin;
     }
 }

@@ -29,7 +29,7 @@ namespace QuanLyShopGiayDep.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.gbTopAdmin = new System.Windows.Forms.GroupBox();
+            this.gbThongTinNhaCC = new System.Windows.Forms.GroupBox();
             this.btnTimKiemNhaCC = new System.Windows.Forms.Button();
             this.dtpDenNgay = new System.Windows.Forms.DateTimePicker();
             this.dtpTuNgay = new System.Windows.Forms.DateTimePicker();
@@ -46,42 +46,42 @@ namespace QuanLyShopGiayDep.UserControls
             this.lblIDNhCCAdmin = new ReaLTaiizor.Controls.FoxLabel();
             this.gbDanhSachNhaCC = new System.Windows.Forms.GroupBox();
             this.dtgvDanhSachNhaCC = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThemNhaCC = new System.Windows.Forms.Button();
-            this.gbTopAdmin.SuspendLayout();
+            this.colMaNhaCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTenNhaCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSDTNhaCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDiaChiNhaCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTuNgayNhaCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDenNgayNhaCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gbThongTinNhaCC.SuspendLayout();
             this.gbDanhSachNhaCC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachNhaCC)).BeginInit();
             this.SuspendLayout();
             // 
-            // gbTopAdmin
+            // gbThongTinNhaCC
             // 
-            this.gbTopAdmin.Controls.Add(this.btnTimKiemNhaCC);
-            this.gbTopAdmin.Controls.Add(this.dtpDenNgay);
-            this.gbTopAdmin.Controls.Add(this.dtpTuNgay);
-            this.gbTopAdmin.Controls.Add(this.foxLabel2);
-            this.gbTopAdmin.Controls.Add(this.foxLabel1);
-            this.gbTopAdmin.Controls.Add(this.txtDiaChiNhaCCAdmin);
-            this.gbTopAdmin.Controls.Add(this.txtTenNhaCCAdmin);
-            this.gbTopAdmin.Controls.Add(this.txtIDNhaCCAdmin);
-            this.gbTopAdmin.Controls.Add(this.mtxtSDTNhaCCAdmin);
-            this.gbTopAdmin.Controls.Add(this.lblTGCCAdmin);
-            this.gbTopAdmin.Controls.Add(this.lblDiaChiNhaCCAdmin);
-            this.gbTopAdmin.Controls.Add(this.lblSDTNhaCCAdmin);
-            this.gbTopAdmin.Controls.Add(this.lblTenNhaCCAdmin);
-            this.gbTopAdmin.Controls.Add(this.lblIDNhCCAdmin);
-            this.gbTopAdmin.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbTopAdmin.ForeColor = System.Drawing.Color.White;
-            this.gbTopAdmin.Location = new System.Drawing.Point(82, 3);
-            this.gbTopAdmin.Name = "gbTopAdmin";
-            this.gbTopAdmin.Size = new System.Drawing.Size(811, 254);
-            this.gbTopAdmin.TabIndex = 1;
-            this.gbTopAdmin.TabStop = false;
-            this.gbTopAdmin.Text = "Tìm kiếm theo nhà cung cấp";
+            this.gbThongTinNhaCC.Controls.Add(this.btnTimKiemNhaCC);
+            this.gbThongTinNhaCC.Controls.Add(this.dtpDenNgay);
+            this.gbThongTinNhaCC.Controls.Add(this.dtpTuNgay);
+            this.gbThongTinNhaCC.Controls.Add(this.foxLabel2);
+            this.gbThongTinNhaCC.Controls.Add(this.foxLabel1);
+            this.gbThongTinNhaCC.Controls.Add(this.txtDiaChiNhaCCAdmin);
+            this.gbThongTinNhaCC.Controls.Add(this.txtTenNhaCCAdmin);
+            this.gbThongTinNhaCC.Controls.Add(this.txtIDNhaCCAdmin);
+            this.gbThongTinNhaCC.Controls.Add(this.mtxtSDTNhaCCAdmin);
+            this.gbThongTinNhaCC.Controls.Add(this.lblTGCCAdmin);
+            this.gbThongTinNhaCC.Controls.Add(this.lblDiaChiNhaCCAdmin);
+            this.gbThongTinNhaCC.Controls.Add(this.lblSDTNhaCCAdmin);
+            this.gbThongTinNhaCC.Controls.Add(this.lblTenNhaCCAdmin);
+            this.gbThongTinNhaCC.Controls.Add(this.lblIDNhCCAdmin);
+            this.gbThongTinNhaCC.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbThongTinNhaCC.ForeColor = System.Drawing.Color.White;
+            this.gbThongTinNhaCC.Location = new System.Drawing.Point(82, 3);
+            this.gbThongTinNhaCC.Name = "gbThongTinNhaCC";
+            this.gbThongTinNhaCC.Size = new System.Drawing.Size(811, 254);
+            this.gbThongTinNhaCC.TabIndex = 1;
+            this.gbThongTinNhaCC.TabStop = false;
+            this.gbThongTinNhaCC.Text = "Tìm kiếm theo nhà cung cấp";
             // 
             // btnTimKiemNhaCC
             // 
@@ -262,49 +262,21 @@ namespace QuanLyShopGiayDep.UserControls
             // 
             // dtgvDanhSachNhaCC
             // 
+            this.dtgvDanhSachNhaCC.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvDanhSachNhaCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvDanhSachNhaCC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
+            this.colMaNhaCC,
+            this.colTenNhaCC,
+            this.colSDTNhaCC,
+            this.colDiaChiNhaCC,
+            this.colTuNgayNhaCC,
+            this.colDenNgayNhaCC});
             this.dtgvDanhSachNhaCC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvDanhSachNhaCC.Location = new System.Drawing.Point(3, 21);
             this.dtgvDanhSachNhaCC.Name = "dtgvDanhSachNhaCC";
+            this.dtgvDanhSachNhaCC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvDanhSachNhaCC.Size = new System.Drawing.Size(805, 234);
             this.dtgvDanhSachNhaCC.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã nhà cung cấp";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên nhà cung cấp";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Số điện thoại";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Địa chỉ";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Từ ngày";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Đến ngày";
-            this.Column6.Name = "Column6";
             // 
             // btnThemNhaCC
             // 
@@ -316,17 +288,47 @@ namespace QuanLyShopGiayDep.UserControls
             this.btnThemNhaCC.Text = "+";
             this.btnThemNhaCC.UseVisualStyleBackColor = true;
             // 
+            // colMaNhaCC
+            // 
+            this.colMaNhaCC.HeaderText = "Mã nhà cung cấp";
+            this.colMaNhaCC.Name = "colMaNhaCC";
+            // 
+            // colTenNhaCC
+            // 
+            this.colTenNhaCC.HeaderText = "Tên nhà cung cấp";
+            this.colTenNhaCC.Name = "colTenNhaCC";
+            // 
+            // colSDTNhaCC
+            // 
+            this.colSDTNhaCC.HeaderText = "Số điện thoại";
+            this.colSDTNhaCC.Name = "colSDTNhaCC";
+            // 
+            // colDiaChiNhaCC
+            // 
+            this.colDiaChiNhaCC.HeaderText = "Địa chỉ";
+            this.colDiaChiNhaCC.Name = "colDiaChiNhaCC";
+            // 
+            // colTuNgayNhaCC
+            // 
+            this.colTuNgayNhaCC.HeaderText = "Từ ngày";
+            this.colTuNgayNhaCC.Name = "colTuNgayNhaCC";
+            // 
+            // colDenNgayNhaCC
+            // 
+            this.colDenNgayNhaCC.HeaderText = "Đến ngày";
+            this.colDenNgayNhaCC.Name = "colDenNgayNhaCC";
+            // 
             // UC_NhaCC
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
             this.Controls.Add(this.btnThemNhaCC);
             this.Controls.Add(this.gbDanhSachNhaCC);
-            this.Controls.Add(this.gbTopAdmin);
+            this.Controls.Add(this.gbThongTinNhaCC);
             this.Name = "UC_NhaCC";
             this.Size = new System.Drawing.Size(962, 517);
-            this.gbTopAdmin.ResumeLayout(false);
-            this.gbTopAdmin.PerformLayout();
+            this.gbThongTinNhaCC.ResumeLayout(false);
+            this.gbThongTinNhaCC.PerformLayout();
             this.gbDanhSachNhaCC.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachNhaCC)).EndInit();
             this.ResumeLayout(false);
@@ -335,7 +337,7 @@ namespace QuanLyShopGiayDep.UserControls
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gbTopAdmin;
+        private System.Windows.Forms.GroupBox gbThongTinNhaCC;
         private Guna.UI2.WinForms.Guna2TextBox txtDiaChiNhaCCAdmin;
         private Guna.UI2.WinForms.Guna2TextBox txtTenNhaCCAdmin;
         private Guna.UI2.WinForms.Guna2TextBox txtIDNhaCCAdmin;
@@ -352,12 +354,12 @@ namespace QuanLyShopGiayDep.UserControls
         private System.Windows.Forms.GroupBox gbDanhSachNhaCC;
         private System.Windows.Forms.Button btnThemNhaCC;
         private System.Windows.Forms.DataGridView dtgvDanhSachNhaCC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Button btnTimKiemNhaCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMaNhaCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTenNhaCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSDTNhaCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDiaChiNhaCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTuNgayNhaCC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDenNgayNhaCC;
     }
 }

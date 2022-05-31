@@ -34,22 +34,14 @@ namespace QuanLyShopGiayDep.UserControls
             this.lblTimKiemHHAdmin = new System.Windows.Forms.Label();
             this.cbbTimKiemHHAdmin = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.paneLeftHH = new System.Windows.Forms.Panel();
             this.txtTimDMHHAdmin = new System.Windows.Forms.TextBox();
             this.btnBootAdmin = new System.Windows.Forms.Button();
             this.btnGuocAdmin = new System.Windows.Forms.Button();
             this.btnGiayAdmin = new System.Windows.Forms.Button();
             this.btnDepAdmin = new System.Windows.Forms.Button();
             this.dtgvHangHoaAdmin = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panelRightHH = new System.Windows.Forms.Panel();
             this.cbbSoLuongHH = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSoLuongHH = new System.Windows.Forms.Label();
@@ -62,10 +54,18 @@ namespace QuanLyShopGiayDep.UserControls
             this.panel1 = new System.Windows.Forms.Panel();
             this.statusStripTongDM = new System.Windows.Forms.StatusStrip();
             this.tsmlTongHH = new System.Windows.Forms.ToolStripStatusLabel();
+            this.colIDHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTenGDHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDVTHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDonGiaHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLoaiHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNhaCCHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMoTaHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHinhAnhHH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.paneLeftHH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHangHoaAdmin)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.panelRightHH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nrudSoLuongHH)).BeginInit();
             this.panel1.SuspendLayout();
             this.statusStripTongDM.SuspendLayout();
@@ -75,6 +75,7 @@ namespace QuanLyShopGiayDep.UserControls
             // 
             this.txtTimKiemHHAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTimKiemHHAdmin.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiemHHAdmin.ForeColor = System.Drawing.Color.White;
             this.txtTimKiemHHAdmin.Location = new System.Drawing.Point(760, 38);
             this.txtTimKiemHHAdmin.Name = "txtTimKiemHHAdmin";
             this.txtTimKiemHHAdmin.Size = new System.Drawing.Size(179, 21);
@@ -109,7 +110,7 @@ namespace QuanLyShopGiayDep.UserControls
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.paneLeftHH);
             this.panel6.Controls.Add(this.dtgvHangHoaAdmin);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(10, 77);
@@ -117,18 +118,18 @@ namespace QuanLyShopGiayDep.UserControls
             this.panel6.Size = new System.Drawing.Size(942, 459);
             this.panel6.TabIndex = 12;
             // 
-            // panel7
+            // paneLeftHH
             // 
-            this.panel7.Controls.Add(this.txtTimDMHHAdmin);
-            this.panel7.Controls.Add(this.btnBootAdmin);
-            this.panel7.Controls.Add(this.btnGuocAdmin);
-            this.panel7.Controls.Add(this.btnGiayAdmin);
-            this.panel7.Controls.Add(this.btnDepAdmin);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(193, 459);
-            this.panel7.TabIndex = 2;
+            this.paneLeftHH.Controls.Add(this.txtTimDMHHAdmin);
+            this.paneLeftHH.Controls.Add(this.btnBootAdmin);
+            this.paneLeftHH.Controls.Add(this.btnGuocAdmin);
+            this.paneLeftHH.Controls.Add(this.btnGiayAdmin);
+            this.paneLeftHH.Controls.Add(this.btnDepAdmin);
+            this.paneLeftHH.Dock = System.Windows.Forms.DockStyle.Left;
+            this.paneLeftHH.Location = new System.Drawing.Point(0, 0);
+            this.paneLeftHH.Name = "paneLeftHH";
+            this.paneLeftHH.Size = new System.Drawing.Size(193, 459);
+            this.paneLeftHH.TabIndex = 2;
             // 
             // txtTimDMHHAdmin
             // 
@@ -196,14 +197,14 @@ namespace QuanLyShopGiayDep.UserControls
             this.dtgvHangHoaAdmin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dtgvHangHoaAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvHangHoaAdmin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8});
+            this.colIDHH,
+            this.colTenGDHH,
+            this.colDVTHH,
+            this.colDonGiaHH,
+            this.colLoaiHH,
+            this.colNhaCCHH,
+            this.colMoTaHH,
+            this.colHinhAnhHH});
             this.dtgvHangHoaAdmin.Dock = System.Windows.Forms.DockStyle.Right;
             this.dtgvHangHoaAdmin.Location = new System.Drawing.Point(196, 0);
             this.dtgvHangHoaAdmin.Name = "dtgvHangHoaAdmin";
@@ -213,78 +214,23 @@ namespace QuanLyShopGiayDep.UserControls
             this.dtgvHangHoaAdmin.Size = new System.Drawing.Size(746, 459);
             this.dtgvHangHoaAdmin.TabIndex = 0;
             // 
-            // Column1
+            // panelRightHH
             // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 120;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên Giày dép";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 220;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Đơn vị tính";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Đơn giá";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 200;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Loại giày dép";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Nhà cung cấp";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 150;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Mô tả";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 170;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Hình ảnh";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 200;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
-            this.panel5.Controls.Add(this.cbbSoLuongHH);
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.lblSoLuongHH);
-            this.panel5.Controls.Add(this.nrudSoLuongHH);
-            this.panel5.Controls.Add(this.cbbNhaCCHH);
-            this.panel5.Controls.Add(this.txtTimKiemHHAdmin);
-            this.panel5.Controls.Add(this.lblTimKiemHHAdmin);
-            this.panel5.Controls.Add(this.cbbTimKiemHHAdmin);
-            this.panel5.Controls.Add(this.btnThemDanhMucHH);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(10, 10);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(942, 67);
-            this.panel5.TabIndex = 11;
+            this.panelRightHH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
+            this.panelRightHH.Controls.Add(this.cbbSoLuongHH);
+            this.panelRightHH.Controls.Add(this.label1);
+            this.panelRightHH.Controls.Add(this.lblSoLuongHH);
+            this.panelRightHH.Controls.Add(this.nrudSoLuongHH);
+            this.panelRightHH.Controls.Add(this.cbbNhaCCHH);
+            this.panelRightHH.Controls.Add(this.txtTimKiemHHAdmin);
+            this.panelRightHH.Controls.Add(this.lblTimKiemHHAdmin);
+            this.panelRightHH.Controls.Add(this.cbbTimKiemHHAdmin);
+            this.panelRightHH.Controls.Add(this.btnThemDanhMucHH);
+            this.panelRightHH.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelRightHH.Location = new System.Drawing.Point(10, 10);
+            this.panelRightHH.Name = "panelRightHH";
+            this.panelRightHH.Size = new System.Drawing.Size(942, 67);
+            this.panelRightHH.TabIndex = 11;
             // 
             // cbbSoLuongHH
             // 
@@ -419,12 +365,67 @@ namespace QuanLyShopGiayDep.UserControls
             this.tsmlTongHH.Size = new System.Drawing.Size(76, 17);
             this.tsmlTongHH.Text = "Số hàng hóa:";
             // 
+            // colIDHH
+            // 
+            this.colIDHH.HeaderText = "ID";
+            this.colIDHH.Name = "colIDHH";
+            this.colIDHH.ReadOnly = true;
+            this.colIDHH.Width = 120;
+            // 
+            // colTenGDHH
+            // 
+            this.colTenGDHH.HeaderText = "Tên Giày dép";
+            this.colTenGDHH.Name = "colTenGDHH";
+            this.colTenGDHH.ReadOnly = true;
+            this.colTenGDHH.Width = 220;
+            // 
+            // colDVTHH
+            // 
+            this.colDVTHH.HeaderText = "Đơn vị tính";
+            this.colDVTHH.Name = "colDVTHH";
+            this.colDVTHH.ReadOnly = true;
+            this.colDVTHH.Width = 150;
+            // 
+            // colDonGiaHH
+            // 
+            this.colDonGiaHH.HeaderText = "Đơn giá";
+            this.colDonGiaHH.Name = "colDonGiaHH";
+            this.colDonGiaHH.ReadOnly = true;
+            this.colDonGiaHH.Width = 200;
+            // 
+            // colLoaiHH
+            // 
+            this.colLoaiHH.HeaderText = "Loại giày dép";
+            this.colLoaiHH.Name = "colLoaiHH";
+            this.colLoaiHH.ReadOnly = true;
+            // 
+            // colNhaCCHH
+            // 
+            this.colNhaCCHH.HeaderText = "Nhà cung cấp";
+            this.colNhaCCHH.Name = "colNhaCCHH";
+            this.colNhaCCHH.ReadOnly = true;
+            this.colNhaCCHH.Width = 150;
+            // 
+            // colMoTaHH
+            // 
+            this.colMoTaHH.HeaderText = "Mô tả";
+            this.colMoTaHH.Name = "colMoTaHH";
+            this.colMoTaHH.ReadOnly = true;
+            this.colMoTaHH.Width = 170;
+            // 
+            // colHinhAnhHH
+            // 
+            this.colHinhAnhHH.HeaderText = "Hình ảnh";
+            this.colHinhAnhHH.Name = "colHinhAnhHH";
+            this.colHinhAnhHH.ReadOnly = true;
+            this.colHinhAnhHH.Width = 200;
+            // 
             // UC_HangHoa
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panelRightHH);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -432,11 +433,11 @@ namespace QuanLyShopGiayDep.UserControls
             this.Name = "UC_HangHoa";
             this.Size = new System.Drawing.Size(962, 558);
             this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.paneLeftHH.ResumeLayout(false);
+            this.paneLeftHH.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHangHoaAdmin)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.panelRightHH.ResumeLayout(false);
+            this.panelRightHH.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nrudSoLuongHH)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -452,21 +453,13 @@ namespace QuanLyShopGiayDep.UserControls
         private System.Windows.Forms.ComboBox cbbTimKiemHHAdmin;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView dtgvHangHoaAdmin;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panelRightHH;
         private System.Windows.Forms.Button btnThemDanhMucHH;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel paneLeftHH;
         private System.Windows.Forms.StatusStrip statusStripTongDM;
         private System.Windows.Forms.Button btnDepAdmin;
         private System.Windows.Forms.Button btnGuocAdmin;
@@ -479,5 +472,13 @@ namespace QuanLyShopGiayDep.UserControls
         private System.Windows.Forms.Label lblSoLuongHH;
         private System.Windows.Forms.NumericUpDown nrudSoLuongHH;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colIDHH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTenGDHH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDVTHH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDonGiaHH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLoaiHH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNhaCCHH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMoTaHH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHinhAnhHH;
     }
 }
