@@ -39,7 +39,7 @@
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.timeOut = new System.Windows.Forms.Timer(this.components);
-            this.chkLuuThongTin = new System.Windows.Forms.CheckBox();
+            this.chkHienThongTin = new System.Windows.Forms.CheckBox();
             this.btnThuNho = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbHinh)).BeginInit();
             this.SuspendLayout();
@@ -92,7 +92,7 @@
             // 
             this.pbHinh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbHinh.Image = ((System.Drawing.Image)(resources.GetObject("pbHinh.Image")));
-            this.pbHinh.Location = new System.Drawing.Point(142, 40);
+            this.pbHinh.Location = new System.Drawing.Point(162, 40);
             this.pbHinh.Name = "pbHinh";
             this.pbHinh.Size = new System.Drawing.Size(143, 134);
             this.pbHinh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -124,6 +124,7 @@
             this.btnDangNhap.TabIndex = 4;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // btnClose
             // 
@@ -144,16 +145,17 @@
             // 
             this.timeOut.Tick += new System.EventHandler(this.timeOut_Tick);
             // 
-            // chkLuuThongTin
+            // chkHienThongTin
             // 
-            this.chkLuuThongTin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.chkLuuThongTin.AutoSize = true;
-            this.chkLuuThongTin.Location = new System.Drawing.Point(105, 347);
-            this.chkLuuThongTin.Name = "chkLuuThongTin";
-            this.chkLuuThongTin.Size = new System.Drawing.Size(222, 25);
-            this.chkLuuThongTin.TabIndex = 3;
-            this.chkLuuThongTin.Text = "Lưu thông tin đăng nhập";
-            this.chkLuuThongTin.UseVisualStyleBackColor = true;
+            this.chkHienThongTin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chkHienThongTin.AutoSize = true;
+            this.chkHienThongTin.Location = new System.Drawing.Point(105, 347);
+            this.chkHienThongTin.Name = "chkHienThongTin";
+            this.chkHienThongTin.Size = new System.Drawing.Size(214, 25);
+            this.chkHienThongTin.TabIndex = 3;
+            this.chkHienThongTin.Text = "Hiện thông tin mật khẩu";
+            this.chkHienThongTin.UseVisualStyleBackColor = true;
+            this.chkHienThongTin.CheckedChanged += new System.EventHandler(this.chkHienThongTin_CheckedChanged);
             // 
             // btnThuNho
             // 
@@ -175,7 +177,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(506, 477);
-            this.Controls.Add(this.chkLuuThongTin);
+            this.Controls.Add(this.chkHienThongTin);
             this.Controls.Add(this.btnThuNho);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDangNhap);
@@ -192,6 +194,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin đăng nhập";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmLogin_FormClosing);
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbHinh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -209,7 +213,7 @@
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Timer timeOut;
-        private System.Windows.Forms.CheckBox chkLuuThongTin;
+        private System.Windows.Forms.CheckBox chkHienThongTin;
         private System.Windows.Forms.Button btnThuNho;
     }
 }

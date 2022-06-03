@@ -41,8 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBConnectData.cs" />
+    <Compile Include="BanHang_DAL.cs" />
+    <Compile Include="ChiTietBanHang_DAL.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="GiayDep_DAL.cs" />
+    <Compile Include="HinhGD_DAL.cs" />
+    <Compile Include="KhachHang_DAL.cs" />
+    <Compile Include="LoaiGD_DAL.cs" />
+    <Compile Include="LoaiTaiKhoan_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanTriVien_DAL.cs" />
+    <Compile Include="ThongKeBanHang_DAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

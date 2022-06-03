@@ -57,6 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\ExtensionMethods.cs" />
+    <Compile Include="Common\InputValidator.cs" />
+    <Compile Include="Common\TienIch.cs" />
     <Compile Include="frmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +71,12 @@
     </Compile>
     <Compile Include="frmLogin.designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuanLyShopGiayDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuanLyShopGiayDep.Designer.cs">
+      <DependentUpon>FrmQuanLyShopGiayDep.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -106,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuanLyShopGiayDep.resx">
+      <DependentUpon>FrmQuanLyShopGiayDep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -153,10 +165,15 @@
       <Project>{380721e8-a673-425b-ae63-ac42e7ffbc19}</Project>
       <Name>BUS</Name>
     </ProjectReference>
+    <ProjectReference Include="DAL\DAL.csproj">
+      <Project>{a2087182-2c6e-430b-98f6-585ff876d417}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="DTO\DTO.csproj">
       <Project>{8dacfa56-0b4b-41bf-a065-908615e49eb9}</Project>
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

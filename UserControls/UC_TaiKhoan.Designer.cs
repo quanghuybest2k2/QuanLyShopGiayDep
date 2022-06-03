@@ -30,6 +30,16 @@ namespace QuanLyShopGiayDep.UserControls
         private void InitializeComponent()
         {
             this.dtgvTaiKhoan = new System.Windows.Forms.DataGridView();
+            this.colMaTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTenDangNhapTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTenNVTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCCCDTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSDTTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEmailTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDiaChiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colVaiTroTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTrangThaiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNgayTaoTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbbQuyenTaiKhoan = new System.Windows.Forms.ComboBox();
             this.btnLamMoiTaiKhoan = new System.Windows.Forms.Button();
             this.btnXoaTaiKhoan = new System.Windows.Forms.Button();
@@ -54,16 +64,6 @@ namespace QuanLyShopGiayDep.UserControls
             this.lblDiaChiTKAdmin = new System.Windows.Forms.Label();
             this.txtDiaChiTaiKhoan = new System.Windows.Forms.TextBox();
             this.chkKichHoatTaiKhoan = new System.Windows.Forms.CheckBox();
-            this.colMaTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTenDangNhapTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTenNVTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCCCDTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSDTTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEmailTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDiaChiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colVaiTroTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTrangThaiTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNgayTaoTaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTaiKhoan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +87,56 @@ namespace QuanLyShopGiayDep.UserControls
             this.dtgvTaiKhoan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvTaiKhoan.Size = new System.Drawing.Size(959, 183);
             this.dtgvTaiKhoan.TabIndex = 13;
+            // 
+            // colMaTaiKhoan
+            // 
+            this.colMaTaiKhoan.HeaderText = "Mã tài khoản";
+            this.colMaTaiKhoan.Name = "colMaTaiKhoan";
+            // 
+            // colTenDangNhapTaiKhoan
+            // 
+            this.colTenDangNhapTaiKhoan.HeaderText = "Tên đăng nhập";
+            this.colTenDangNhapTaiKhoan.Name = "colTenDangNhapTaiKhoan";
+            // 
+            // colTenNVTaiKhoan
+            // 
+            this.colTenNVTaiKhoan.HeaderText = "Tên nhân viên";
+            this.colTenNVTaiKhoan.Name = "colTenNVTaiKhoan";
+            // 
+            // colCCCDTaiKhoan
+            // 
+            this.colCCCDTaiKhoan.HeaderText = "Số CCCD";
+            this.colCCCDTaiKhoan.Name = "colCCCDTaiKhoan";
+            // 
+            // colSDTTaiKhoan
+            // 
+            this.colSDTTaiKhoan.HeaderText = "Số điện thoại";
+            this.colSDTTaiKhoan.Name = "colSDTTaiKhoan";
+            // 
+            // colEmailTaiKhoan
+            // 
+            this.colEmailTaiKhoan.HeaderText = "Email";
+            this.colEmailTaiKhoan.Name = "colEmailTaiKhoan";
+            // 
+            // colDiaChiTaiKhoan
+            // 
+            this.colDiaChiTaiKhoan.HeaderText = "Địa chỉ";
+            this.colDiaChiTaiKhoan.Name = "colDiaChiTaiKhoan";
+            // 
+            // colVaiTroTaiKhoan
+            // 
+            this.colVaiTroTaiKhoan.HeaderText = "Vai trò";
+            this.colVaiTroTaiKhoan.Name = "colVaiTroTaiKhoan";
+            // 
+            // colTrangThaiTaiKhoan
+            // 
+            this.colTrangThaiTaiKhoan.HeaderText = "Trạng thái";
+            this.colTrangThaiTaiKhoan.Name = "colTrangThaiTaiKhoan";
+            // 
+            // colNgayTaoTaiKhoan
+            // 
+            this.colNgayTaoTaiKhoan.HeaderText = "Ngày tạo";
+            this.colNgayTaoTaiKhoan.Name = "colNgayTaoTaiKhoan";
             // 
             // cbbQuyenTaiKhoan
             // 
@@ -165,6 +215,7 @@ namespace QuanLyShopGiayDep.UserControls
             // txtTenNVTaiKhoan
             // 
             this.txtTenNVTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTenNVTaiKhoan.BackColor = System.Drawing.Color.White;
             this.txtTenNVTaiKhoan.Location = new System.Drawing.Point(594, 56);
             this.txtTenNVTaiKhoan.Name = "txtTenNVTaiKhoan";
             this.txtTenNVTaiKhoan.Size = new System.Drawing.Size(244, 20);
@@ -181,6 +232,7 @@ namespace QuanLyShopGiayDep.UserControls
             // txtMatKhauTaiKhoan
             // 
             this.txtMatKhauTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMatKhauTaiKhoan.BackColor = System.Drawing.Color.White;
             this.txtMatKhauTaiKhoan.Location = new System.Drawing.Point(241, 203);
             this.txtMatKhauTaiKhoan.Name = "txtMatKhauTaiKhoan";
             this.txtMatKhauTaiKhoan.PasswordChar = '*';
@@ -190,6 +242,7 @@ namespace QuanLyShopGiayDep.UserControls
             // txtEmailTaiKhoan
             // 
             this.txtEmailTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmailTaiKhoan.BackColor = System.Drawing.Color.White;
             this.txtEmailTaiKhoan.Location = new System.Drawing.Point(241, 156);
             this.txtEmailTaiKhoan.Name = "txtEmailTaiKhoan";
             this.txtEmailTaiKhoan.Size = new System.Drawing.Size(199, 20);
@@ -198,6 +251,7 @@ namespace QuanLyShopGiayDep.UserControls
             // txtTenDNTaiKhoan
             // 
             this.txtTenDNTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTenDNTaiKhoan.BackColor = System.Drawing.Color.White;
             this.txtTenDNTaiKhoan.Location = new System.Drawing.Point(241, 54);
             this.txtTenDNTaiKhoan.Name = "txtTenDNTaiKhoan";
             this.txtTenDNTaiKhoan.Size = new System.Drawing.Size(199, 20);
@@ -336,6 +390,7 @@ namespace QuanLyShopGiayDep.UserControls
             // txtDiaChiTaiKhoan
             // 
             this.txtDiaChiTaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDiaChiTaiKhoan.BackColor = System.Drawing.Color.White;
             this.txtDiaChiTaiKhoan.Location = new System.Drawing.Point(241, 250);
             this.txtDiaChiTaiKhoan.Name = "txtDiaChiTaiKhoan";
             this.txtDiaChiTaiKhoan.PasswordChar = '*';
@@ -349,60 +404,10 @@ namespace QuanLyShopGiayDep.UserControls
             this.chkKichHoatTaiKhoan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkKichHoatTaiKhoan.Location = new System.Drawing.Point(594, 247);
             this.chkKichHoatTaiKhoan.Name = "chkKichHoatTaiKhoan";
-            this.chkKichHoatTaiKhoan.Size = new System.Drawing.Size(98, 23);
+            this.chkKichHoatTaiKhoan.Size = new System.Drawing.Size(99, 23);
             this.chkKichHoatTaiKhoan.TabIndex = 10;
-            this.chkKichHoatTaiKhoan.Text = "kích hoạt";
+            this.chkKichHoatTaiKhoan.Text = "Kích hoạt";
             this.chkKichHoatTaiKhoan.UseVisualStyleBackColor = true;
-            // 
-            // colMaTaiKhoan
-            // 
-            this.colMaTaiKhoan.HeaderText = "Mã tài khoản";
-            this.colMaTaiKhoan.Name = "colMaTaiKhoan";
-            // 
-            // colTenDangNhapTaiKhoan
-            // 
-            this.colTenDangNhapTaiKhoan.HeaderText = "Tên đăng nhập";
-            this.colTenDangNhapTaiKhoan.Name = "colTenDangNhapTaiKhoan";
-            // 
-            // colTenNVTaiKhoan
-            // 
-            this.colTenNVTaiKhoan.HeaderText = "Tên nhân viên";
-            this.colTenNVTaiKhoan.Name = "colTenNVTaiKhoan";
-            // 
-            // colCCCDTaiKhoan
-            // 
-            this.colCCCDTaiKhoan.HeaderText = "Số CCCD";
-            this.colCCCDTaiKhoan.Name = "colCCCDTaiKhoan";
-            // 
-            // colSDTTaiKhoan
-            // 
-            this.colSDTTaiKhoan.HeaderText = "Số điện thoại";
-            this.colSDTTaiKhoan.Name = "colSDTTaiKhoan";
-            // 
-            // colEmailTaiKhoan
-            // 
-            this.colEmailTaiKhoan.HeaderText = "Email";
-            this.colEmailTaiKhoan.Name = "colEmailTaiKhoan";
-            // 
-            // colDiaChiTaiKhoan
-            // 
-            this.colDiaChiTaiKhoan.HeaderText = "Địa chỉ";
-            this.colDiaChiTaiKhoan.Name = "colDiaChiTaiKhoan";
-            // 
-            // colVaiTroTaiKhoan
-            // 
-            this.colVaiTroTaiKhoan.HeaderText = "Vai trò";
-            this.colVaiTroTaiKhoan.Name = "colVaiTroTaiKhoan";
-            // 
-            // colTrangThaiTaiKhoan
-            // 
-            this.colTrangThaiTaiKhoan.HeaderText = "Trạng thái";
-            this.colTrangThaiTaiKhoan.Name = "colTrangThaiTaiKhoan";
-            // 
-            // colNgayTaoTaiKhoan
-            // 
-            this.colNgayTaoTaiKhoan.HeaderText = "Ngày tạo";
-            this.colNgayTaoTaiKhoan.Name = "colNgayTaoTaiKhoan";
             // 
             // UC_TaiKhoan
             // 
